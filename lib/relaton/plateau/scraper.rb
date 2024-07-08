@@ -3,6 +3,7 @@ require "yaml"
 require "json"
 require "net/http"
 require "uri"
+require "date"
 require_relative "bibitem"
 
 module Relaton
@@ -26,19 +27,30 @@ module Relaton
         return [] unless response
 
         doc = Nokogiri::HTML(response)
-        (0..12).map do |i|
-          id = format("%02d", i)
-          div = doc.at_css("##{id}")
-          next unless div
+        json = doc.at_css("#__NEXT_DATA__")
+        data = JSON.parse(json)
+        items = data["props"]["pageProps"]["handbooks"]["nodes"]
 
-          ::Relaton::Plateau::BibItem.new(
-            slug_value: "##{id}",
-            book_title: div.at_css(".handbooks_list_title__HZ48a")&.text&.strip,
-            book_description: div.at_css(".handbooks_list_description__YvC2S p")&.text&.strip,
-            download_value: div.at_css(".handbooks_list_select_btn__qKfQJ")&.text&.strip,
-            pdf_link: div.at_css(".handbooks_list_bottom_buttons__q5jEg a")&.[]("href"),
-          )
-        end.compact
+        items.map do |node|
+          handbook = node["handbook"]
+          versions = handbook["versions"]
+
+          versions.map do |version|
+            ::Relaton::Plateau::BibItem.new(
+              title: handbook["title"],
+              abstract: handbook["subtitle"],
+              cover: "https://www.mlit.go.jp/#{handbook["thumbnail"]["mediaItemUrl"]}",
+              pubid: "PLATEAU Handbook ##{node["slug"]}",
+              type: "handbook",
+              publication_date: Date.parse(version["date"].gsub(".", "-")),
+              pdf_link: version["pdf"],
+              filesize: version["filesize"].to_i,
+              edition_number: version["title"].match(/\d\.\d/)[0],
+              edition_text: version["title"],
+              tags: [],
+            )
+          end
+        end.flatten
       end
 
       def self.fetch_technical_reports
@@ -47,13 +59,20 @@ module Relaton
 
         nodes = response["pageProps"]["nodes"]
         nodes.map do |node|
+          technical_report = node["technicalReport"]
+
           ::Relaton::Plateau::BibItem.new(
-            slug_value: node["id"],
-            publication_date: node["date"],
-            book_title: node["technicalReport"]["title"],
-            book_subtitle: node["technicalReport"]["subtitle"],
-            pdf_link: node["technicalReport"]["pdf"],
-            download_value: node["technicalReport"]["filesize"],
+            title: technical_report["title"],
+            abstract: technical_report["subtitle"],
+            cover: "https://www.mlit.go.jp/#{technical_report["thumbnail"]["mediaItemUrl"]}",
+            pubid: "PLATEAU Tech Report ##{node["slug"]}",
+            type: "technical-report",
+            subtype: node["technicalReportCategories"]["nodes"].first["name"],
+            publication_date: Date.parse(node["date"]),
+            pdf_link: technical_report["pdf"],
+            filesize: technical_report["filesize"].to_i,
+            edition_number: "1",
+            edition_text: nil,
             tags: node["globalTags"]["nodes"].map { |tag| tag["name"] },
           )
         end

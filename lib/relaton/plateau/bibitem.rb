@@ -3,8 +3,9 @@ require "yaml"
 module Relaton
   module Plateau
     class BibItem
-      attr_accessor :slug_value, :book_title, :book_description, :book_version,
-                    :publication_date, :download_value, :pdf_link, :tags, :book_subtitle
+      attr_accessor :pubid, :title, :abstract, :edition_number, :edition_text,
+                    :cover, :type, :subtype, :filesize, :publication_date,
+                    :download_value, :pdf_link, :tags
 
       def initialize(attributes = {})
         attributes.each do |key, value|
@@ -14,15 +15,18 @@ module Relaton
 
       def to_hash
         {
-          slug_value: slug_value,
-          book_title: book_title,
-          book_description: book_description,
-          book_version: book_version,
+          pubid: pubid,
+          title: title,
+          abstract: abstract,
+          cover: cover,
+          type: type,
+          edition_text: edition_text,
+          edition_number: edition_number,
           publication_date: publication_date,
-          download_value: download_value,
+          subtype: subtype,
+          filesize: filesize,
           pdf_link: pdf_link,
           tags: tags,
-          book_subtitle: book_subtitle,
         }.compact
       end
 
