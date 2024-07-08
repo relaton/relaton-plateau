@@ -1,0 +1,47 @@
+= RelatonPlateau: retrieve Project PLATEAU Standards for bibliographic use using the BibliographicItem model
+
+image:https://img.shields.io/gem/v/relaton-plateau.svg["Gem Version", link="https://rubygems.org/gems/relaton-plateau"]
+image:https://github.com/relaton/relaton-plateau/workflows/macos/badge.svg["Build Status (macOS)", link="https://github.com/relaton/relaton-plateau/actions?workflow=macos"]
+image:https://github.com/relaton/relaton-plateau/workflows/windows/badge.svg["Build Status (Windows)", link="https://github.com/relaton/relaton-plateau/actions?workflow=windows"]
+image:https://github.com/relaton/relaton-plateau/workflows/ubuntu/badge.svg["Build Status (Ubuntu)", link="https://github.com/relaton/relaton-plateau/actions?workflow=ubuntu"]
+image:https://codeclimate.com/github/relaton/relaton-plateau/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/metanorma/relaton-plateau"]
+image:https://img.shields.io/github/issues-pr-raw/relaton/relaton-plateau.svg["Pull Requests", link="https://github.com/relaton/relaton-plateau/pulls"]
+image:https://img.shields.io/github/commits-since/relaton/relaton/latest.svg["Commits since latest",link="https://github.com/relaton/relaton/releases"]
+
+RelatonPlateau is a Ruby gem that implements the https://github.com/metanorma/metanorma-model-plateau#iso-bibliographic-item[IsoBibliographicItem model].
+
+You can use it to retrieve metadata of ISO Standards from https://www.iso.org, and access such metadata through the `IsoBibliographicItem` object.
+
+== Installation
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'relaton-plateau'
+----
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install relaton-plateau
+
+== Usage
+
+=== Fetching
+
+[source,sh]
+----
+$ exe/test-fetch.rb
+----
+
+== Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/metanorma/relaton-plateau
+
+== License
+
+The gem is available as open source under the terms of the https://opensource.org/licenses/MIT[MIT license].
