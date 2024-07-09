@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "plateau/version"
-require_relative "plateau/scraper"
+require_relative "plateau/fetcher"
 require_relative "plateau/bibitem"
 
 module Relaton

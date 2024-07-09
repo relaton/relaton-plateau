@@ -3,9 +3,10 @@ require "yaml"
 module Relaton
   module Plateau
     class BibItem
-      attr_accessor :pubid, :title, :abstract, :edition_number, :edition_text,
-                    :cover, :type, :subtype, :filesize, :publication_date,
-                    :download_value, :pdf_link, :tags
+      attr_accessor :pubid, :title_en, :title_jp, :abstract_jp, :edition_number,
+                    :edition_text, :cover, :type, :subtype, :filesize,
+                    :publication_date, :download_value, :url_pdf, :url_html,
+                    :tags
 
       def initialize(attributes = {})
         attributes.each do |key, value|
@@ -16,8 +17,9 @@ module Relaton
       def to_hash
         {
           pubid: pubid,
-          title: title,
-          abstract: abstract,
+          title_en: title_en,
+          title_jp: title_jp,
+          abstract_jp: abstract_jp,
           cover: cover,
           type: type,
           edition_text: edition_text,
@@ -25,13 +27,14 @@ module Relaton
           publication_date: publication_date,
           subtype: subtype,
           filesize: filesize,
-          pdf_link: pdf_link,
+          url_pdf: url_pdf,
+          url_html: url_html,
           tags: tags,
         }.compact
       end
 
-      def to_yaml
-        to_hash.to_yaml
+      def encode_with(coder)
+        coder.represent_object(nil, to_hash)
       end
     end
   end

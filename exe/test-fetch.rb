@@ -2,5 +2,5 @@
 
 require_relative "../lib/relaton/plateau"
 
-Relaton::Plateau::Scraper.scrape_handbooks
-Relaton::Plateau::Scraper.scrape_technical_reports
+Relaton::Plateau::Fetcher.fetch_handbooks
+Relaton::Plateau::Fetcher.fetch_technical_reports
