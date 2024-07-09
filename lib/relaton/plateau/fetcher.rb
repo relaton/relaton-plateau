@@ -83,6 +83,12 @@ module Relaton
           title_en = description_parts[0] ? description_parts[0].strip : ""
           abstract_jp = description_parts[1] ? description_parts[1].strip : ""
 
+          pubid_number = entry["slug"]
+          document_type = "handbook"
+          if pubid_number.match("-")
+            document_type = "annex"
+          end
+
           versions.map do |version|
             ::Relaton::Plateau::BibItem.new(
               pubid: "PLATEAU Handbook ##{entry["slug"]}",
@@ -90,7 +96,7 @@ module Relaton
               title_en: title_en,
               abstract_jp: abstract_jp,
               cover: "https://www.mlit.go.jp/#{handbook["thumbnail"]["mediaItemUrl"]}",
-              type: "handbook",
+              type: document_type,
               publication_date: Date.parse(version["date"].gsub(".", "-")),
               url_pdf: version["pdf"],
               url_html: version["html"],
