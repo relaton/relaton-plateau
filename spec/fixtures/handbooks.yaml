@@ -1,0 +1,421 @@
+---
+- :pubid: 'PLATEAU Handbook #00'
+  :title_en: Guidance on the Installation for 3D City Model
+  :title_jp: 3D都市モデルの導入ガイダンス
+  :abstract_jp: 地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/06/1@2x.jpg
+  :type: handbook
+  :edition_text: 第4.0版
+  :edition_number: '4.0'
+  :publication_date: 2024-04-08
+  :filesize: 22471864
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver04.pdf
+- :pubid: 'PLATEAU Handbook #00'
+  :title_en: Guidance on the Installation for 3D City Model
+  :title_jp: 3D都市モデルの導入ガイダンス
+  :abstract_jp: 地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/06/1@2x.jpg
+  :type: handbook
+  :edition_text: 第3.0版
+  :edition_number: '3.0'
+  :publication_date: 2023-04-07
+  :filesize: 32088000
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver03.pdf
+- :pubid: 'PLATEAU Handbook #00'
+  :title_en: Guidance on the Installation for 3D City Model
+  :title_jp: 3D都市モデルの導入ガイダンス
+  :abstract_jp: 地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/06/1@2x.jpg
+  :type: handbook
+  :edition_text: 第2.0版
+  :edition_number: '2.0'
+  :publication_date: 2022-06-02
+  :filesize: 27017127
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver02.pdf
+- :pubid: 'PLATEAU Handbook #00'
+  :title_en: Guidance on the Installation for 3D City Model
+  :title_jp: 3D都市モデルの導入ガイダンス
+  :abstract_jp: 地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/06/1@2x.jpg
+  :type: handbook
+  :edition_text: 第1.0版
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 18381880
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver01.pdf
+- :pubid: 'PLATEAU Handbook #01'
+  :title_en: Standard Data Product Specification for 3D City Model
+  :title_jp: 3D都市モデル標準製品仕様書
+  :abstract_jp: 国際標準規格であるCityGMLによる3D都市モデル整備のための標準製品仕様
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/09/2@2x.jpg
+  :type: handbook
+  :edition_text: 第4.0版
+  :edition_number: '4.0'
+  :publication_date: 2024-03-29
+  :filesize: 0
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0001_ver04.pdf
+  :url_html: https://www.mlit.go.jp/plateaudocument/
+- :pubid: 'PLATEAU Handbook #01'
+  :title_en: Standard Data Product Specification for 3D City Model
+  :title_jp: 3D都市モデル標準製品仕様書
+  :abstract_jp: 国際標準規格であるCityGMLによる3D都市モデル整備のための標準製品仕様
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/09/2@2x.jpg
+  :type: handbook
+  :edition_text: 第3.5版
+  :edition_number: '3.5'
+  :publication_date: 2024-03-22
+  :filesize: 28596019
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0001_ver03.pdf
+- :pubid: 'PLATEAU Handbook #01'
+  :title_en: Standard Data Product Specification for 3D City Model
+  :title_jp: 3D都市モデル標準製品仕様書
+  :abstract_jp: 国際標準規格であるCityGMLによる3D都市モデル整備のための標準製品仕様
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/09/2@2x.jpg
+  :type: handbook
+  :edition_text: 第2.3版
+  :edition_number: '2.3'
+  :publication_date: 2022-09-30
+  :filesize: 16665122
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0001_ver02.pdf
+- :pubid: 'PLATEAU Handbook #01'
+  :title_en: Standard Data Product Specification for 3D City Model
+  :title_jp: 3D都市モデル標準製品仕様書
+  :abstract_jp: 国際標準規格であるCityGMLによる3D都市モデル整備のための標準製品仕様
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/09/2@2x.jpg
+  :type: handbook
+  :edition_text: 第1.0版
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 5040195
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0001_ver01.pdf
+- :pubid: 'PLATEAU Handbook #02'
+  :title_en: Standard Implementation Procedures for 3D City Model
+  :title_jp: 3D都市モデル標準作業手順書
+  :abstract_jp: 国際標準規格であるCityGMLによる3D都市モデル整備のための標準作業手順
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/09/3@2x.jpg
+  :type: handbook
+  :edition_text: 第4.0版
+  :edition_number: '4.0'
+  :publication_date: 2024-03-29
+  :filesize: 0
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0002_ver04.pdf
+  :url_html: https://www.mlit.go.jp/plateaudocument02/
+- :pubid: 'PLATEAU Handbook #02'
+  :title_en: Standard Implementation Procedures for 3D City Model
+  :title_jp: 3D都市モデル標準作業手順書
+  :abstract_jp: 国際標準規格であるCityGMLによる3D都市モデル整備のための標準作業手順
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/09/3@2x.jpg
+  :type: handbook
+  :edition_text: 第3.5版
+  :edition_number: '3.5'
+  :publication_date: 2024-03-22
+  :filesize: 43971728
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0002_ver03.pdf
+- :pubid: 'PLATEAU Handbook #02'
+  :title_en: Standard Implementation Procedures for 3D City Model
+  :title_jp: 3D都市モデル標準作業手順書
+  :abstract_jp: 国際標準規格であるCityGMLによる3D都市モデル整備のための標準作業手順
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/09/3@2x.jpg
+  :type: handbook
+  :edition_text: 第2.2版
+  :edition_number: '2.2'
+  :publication_date: 2022-09-30
+  :filesize: 4416870
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0002_ver02.pdf
+- :pubid: 'PLATEAU Handbook #02'
+  :title_en: Standard Implementation Procedures for 3D City Model
+  :title_jp: 3D都市モデル標準作業手順書
+  :abstract_jp: 国際標準規格であるCityGMLによる3D都市モデル整備のための標準作業手順
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/09/3@2x.jpg
+  :type: handbook
+  :edition_text: 第1.0版
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 2936749
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0002_ver01.pdf
+- :pubid: 'PLATEAU Handbook #03'
+  :title_en: Manual for the Integration of BIM Models in 3D City Models with CityGML
+  :title_jp: 3D都市モデル整備のためのBIM活用マニュアル
+  :abstract_jp: BIM（建築情報モデル）を活用して屋内モデルを3D都市モデルに統合するためのマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/03/4@2x.jpg
+  :type: handbook
+  :edition_text: 第3.0版
+  :edition_number: '3.0'
+  :publication_date: 2023-03-27
+  :filesize: 51479909
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0003_ver03.pdf
+- :pubid: 'PLATEAU Handbook #03'
+  :title_en: Manual for the Integration of BIM Models in 3D City Models with CityGML
+  :title_jp: 3D都市モデル整備のためのBIM活用マニュアル
+  :abstract_jp: BIM（建築情報モデル）を活用して屋内モデルを3D都市モデルに統合するためのマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/03/4@2x.jpg
+  :type: handbook
+  :edition_text: 第2.0版
+  :edition_number: '2.0'
+  :publication_date: 2022-03-29
+  :filesize: 19629016
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0003_ver02.pdf
+- :pubid: 'PLATEAU Handbook #03'
+  :title_en: Manual for the Integration of BIM Models in 3D City Models with CityGML
+  :title_jp: 3D都市モデル整備のためのBIM活用マニュアル
+  :abstract_jp: BIM（建築情報モデル）を活用して屋内モデルを3D都市モデルに統合するためのマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/03/4@2x.jpg
+  :type: handbook
+  :edition_text: 第1.0版
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 3409322
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0003_ver01.pdf
+- :pubid: 'PLATEAU Handbook #03-1'
+  :title_en: 情報伝達マニュアル（IDM）・モデルビュー定義（MVD）
+  :title_jp: "（別冊）3D都市モデルとの連携のためのBIMモデルIDM・MVD"
+  :abstract_jp: ''
+  :cover: https://www.mlit.go.jp//plateau/uploads/2021/03/plateu_layout_2022_ol-12-scaled.jpg
+  :type: handbook
+  :edition_text: 第2.0版
+  :edition_number: '2.0'
+  :publication_date: 2023-03-27
+  :filesize: 8757397
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_00031_ver02.pdf
+- :pubid: 'PLATEAU Handbook #03-1'
+  :title_en: 情報伝達マニュアル（IDM）・モデルビュー定義（MVD）
+  :title_jp: "（別冊）3D都市モデルとの連携のためのBIMモデルIDM・MVD"
+  :abstract_jp: ''
+  :cover: https://www.mlit.go.jp//plateau/uploads/2021/03/plateu_layout_2022_ol-12-scaled.jpg
+  :type: handbook
+  :edition_text: 第1.0版
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 7988260
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_00031_ver01.pdf
+- :pubid: 'PLATEAU Handbook #05'
+  :title_en: Manual for the Visualization of Disaster Risk with 3D City Models
+  :title_jp: 3D都市モデルを活用した災害リスク情報の可視化マニュアル
+  :abstract_jp: 災害リスク情報を3D都市モデルと統合表示するためのデータ作成・可視化・実装手順等のマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/03/6@2x.jpg
+  :type: handbook
+  :edition_text: 第2.1版
+  :edition_number: '2.1'
+  :publication_date: 2024-03-29
+  :filesize: 7535082
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0005_ver02.pdf
+- :pubid: 'PLATEAU Handbook #05'
+  :title_en: Manual for the Visualization of Disaster Risk with 3D City Models
+  :title_jp: 3D都市モデルを活用した災害リスク情報の可視化マニュアル
+  :abstract_jp: 災害リスク情報を3D都市モデルと統合表示するためのデータ作成・可視化・実装手順等のマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/03/6@2x.jpg
+  :type: handbook
+  :edition_text: 第1.0版
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 10624458
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0005_ver01.pdf
+- :pubid: 'PLATEAU Handbook #07'
+  :title_en: 3D City Model Data Conversion Manual
+  :title_jp: 3D都市モデルのデータ変換マニュアル
+  :abstract_jp: CityGMLを3DCG形式（OBJ/FBX/datasmith)及びBIM形式（IFC）へ変換するためのマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2021/03/8@2x.jpg
+  :type: handbook
+  :edition_text: 第2.0版
+  :edition_number: '2.0'
+  :publication_date: 2024-04-04
+  :filesize: 8402655
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0007_ver02.pdf
+- :pubid: 'PLATEAU Handbook #07'
+  :title_en: 3D City Model Data Conversion Manual
+  :title_jp: 3D都市モデルのデータ変換マニュアル
+  :abstract_jp: CityGMLを3DCG形式（OBJ/FBX/datasmith)及びBIM形式（IFC）へ変換するためのマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2021/03/8@2x.jpg
+  :type: handbook
+  :edition_text: 第1.0版
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 8996275
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0007_ver01.pdf
+- :pubid: 'PLATEAU Handbook #08'
+  :title_en: Visual Identity Manual for Project PLATEAU
+  :title_jp: ビジュアルアイデンティティ（VI）マニュアル
+  :abstract_jp: Project  PLATEAUのロゴマーク及びイメージカラーを利用する場合のマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2021/03/9@2x.jpg
+  :type: handbook
+  :edition_text: 第2.0版
+  :edition_number: '2.0'
+  :publication_date: 2024-03-22
+  :filesize: 690430
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0008_ver02.pdf
+- :pubid: 'PLATEAU Handbook #08'
+  :title_en: Visual Identity Manual for Project PLATEAU
+  :title_jp: ビジュアルアイデンティティ（VI）マニュアル
+  :abstract_jp: Project  PLATEAUのロゴマーク及びイメージカラーを利用する場合のマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2021/03/9@2x.jpg
+  :type: handbook
+  :edition_text: 第1.0版
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 1430677
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0008_ver01.pdf
+- :pubid: 'PLATEAU Handbook #09'
+  :title_en: 3D City Model Demonstration Manual
+  :title_jp: PLATEAU VIEW構築マニュアル
+  :abstract_jp: 3D都市モデルの可視化環境構築及びデータ重畳のための仕様・手順等のマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0009_ver04.jpg
+  :type: handbook
+  :edition_text: 第4.0版
+  :edition_number: '4.0'
+  :publication_date: 2024-04-04
+  :filesize: 15645149
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver04.pdf
+- :pubid: 'PLATEAU Handbook #09'
+  :title_en: 3D City Model Demonstration Manual
+  :title_jp: PLATEAU VIEW構築マニュアル
+  :abstract_jp: 3D都市モデルの可視化環境構築及びデータ重畳のための仕様・手順等のマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0009_ver04.jpg
+  :type: handbook
+  :edition_text: 第3.0版 実証環境構築マニュアル
+  :edition_number: '3.0'
+  :publication_date: 2023-04-07
+  :filesize: 16124297
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver03.pdf
+- :pubid: 'PLATEAU Handbook #09'
+  :title_en: 3D City Model Demonstration Manual
+  :title_jp: PLATEAU VIEW構築マニュアル
+  :abstract_jp: 3D都市モデルの可視化環境構築及びデータ重畳のための仕様・手順等のマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0009_ver04.jpg
+  :type: handbook
+  :edition_text: 第2.0版 実証環境構築マニュアル
+  :edition_number: '2.0'
+  :publication_date: 2022-05-11
+  :filesize: 6953153
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver02.pdf
+- :pubid: 'PLATEAU Handbook #09'
+  :title_en: 3D City Model Demonstration Manual
+  :title_jp: PLATEAU VIEW構築マニュアル
+  :abstract_jp: 3D都市モデルの可視化環境構築及びデータ重畳のための仕様・手順等のマニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0009_ver04.jpg
+  :type: handbook
+  :edition_text: 第1.0版 実証環境構築マニュアル
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 1466949
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver01.pdf
+- :pubid: 'PLATEAU Handbook #10'
+  :title_en: Manual of Survey for 3D City Modeling
+  :title_jp: 3D都市モデル整備のための測量マニュアル
+  :abstract_jp: 3D都市モデル（建物モデル）の整備のための標準的な測量作業マニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2021/03/11@2x.jpg
+  :type: handbook
+  :edition_text: 第3.0版
+  :edition_number: '3.0'
+  :publication_date: 2024-04-02
+  :filesize: 6769208
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0010_ver03.pdf
+- :pubid: 'PLATEAU Handbook #10'
+  :title_en: Manual of Survey for 3D City Modeling
+  :title_jp: 3D都市モデル整備のための測量マニュアル
+  :abstract_jp: 3D都市モデル（建物モデル）の整備のための標準的な測量作業マニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2021/03/11@2x.jpg
+  :type: handbook
+  :edition_text: 第2.0版
+  :edition_number: '2.0'
+  :publication_date: 2023-04-10
+  :filesize: 4041963
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0010_ver02.pdf
+- :pubid: 'PLATEAU Handbook #10'
+  :title_en: Manual of Survey for 3D City Modeling
+  :title_jp: 3D都市モデル整備のための測量マニュアル
+  :abstract_jp: 3D都市モデル（建物モデル）の整備のための標準的な測量作業マニュアル
+  :cover: https://www.mlit.go.jp//plateau/uploads/2021/03/11@2x.jpg
+  :type: handbook
+  :edition_text: 第1.0版
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 2173684
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0010_ver01.pdf
+- :pubid: 'PLATEAU Handbook #11'
+  :title_en: ユースケース開発のための基本的考え方・事例紹介・技術導入手順等のマニュアル
+  :title_jp: 3D都市モデルのユースケース開発マニュアル
+  :abstract_jp: ''
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0011_ver04.jpg
+  :type: handbook
+  :edition_text: 第4.0版
+  :edition_number: '4.0'
+  :publication_date: 2024-04-04
+  :filesize: 33011148
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0011_ver04.pdf
+- :pubid: 'PLATEAU Handbook #11'
+  :title_en: ユースケース開発のための基本的考え方・事例紹介・技術導入手順等のマニュアル
+  :title_jp: 3D都市モデルのユースケース開発マニュアル
+  :abstract_jp: ''
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0011_ver04.jpg
+  :type: handbook
+  :edition_text: 第3.0版（公共活用編）
+  :edition_number: '3.0'
+  :publication_date: 2023-04-04
+  :filesize: 40980838
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0004_ver03.pdf
+- :pubid: 'PLATEAU Handbook #11'
+  :title_en: ユースケース開発のための基本的考え方・事例紹介・技術導入手順等のマニュアル
+  :title_jp: 3D都市モデルのユースケース開発マニュアル
+  :abstract_jp: ''
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0011_ver04.jpg
+  :type: handbook
+  :edition_text: 第3.0版（民間活用編）
+  :edition_number: '3.0'
+  :publication_date: 2023-04-07
+  :filesize: 37446056
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0006_ver03.pdf
+- :pubid: 'PLATEAU Handbook #11'
+  :title_en: ユースケース開発のための基本的考え方・事例紹介・技術導入手順等のマニュアル
+  :title_jp: 3D都市モデルのユースケース開発マニュアル
+  :abstract_jp: ''
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0011_ver04.jpg
+  :type: handbook
+  :edition_text: 第2.0版（公共活用編）
+  :edition_number: '2.0'
+  :publication_date: 2022-03-29
+  :filesize: 26151844
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0004_ver02.pdf
+- :pubid: 'PLATEAU Handbook #11'
+  :title_en: ユースケース開発のための基本的考え方・事例紹介・技術導入手順等のマニュアル
+  :title_jp: 3D都市モデルのユースケース開発マニュアル
+  :abstract_jp: ''
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0011_ver04.jpg
+  :type: handbook
+  :edition_text: 第2.0版（民間活用編）
+  :edition_number: '2.0'
+  :publication_date: 2022-03-29
+  :filesize: 25995289
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0006_ver02.pdf
+- :pubid: 'PLATEAU Handbook #11'
+  :title_en: ユースケース開発のための基本的考え方・事例紹介・技術導入手順等のマニュアル
+  :title_jp: 3D都市モデルのユースケース開発マニュアル
+  :abstract_jp: ''
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0011_ver04.jpg
+  :type: handbook
+  :edition_text: 第1.0版（公共活用編）
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 22362653
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0004_ver01.pdf
+- :pubid: 'PLATEAU Handbook #11'
+  :title_en: ユースケース開発のための基本的考え方・事例紹介・技術導入手順等のマニュアル
+  :title_jp: 3D都市モデルのユースケース開発マニュアル
+  :abstract_jp: ''
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0011_ver04.jpg
+  :type: handbook
+  :edition_text: 第1.0版（民間活用編）
+  :edition_number: '1.0'
+  :publication_date: 2021-03-26
+  :filesize: 10812148
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0006_ver01.pdf
+- :pubid: 'PLATEAU Handbook #12'
+  :title_en: PLATEAU SDKの機能と仕様、利用手順を解説したマニュアル
+  :title_jp: PLATEAU SDK技術解説書
+  :abstract_jp: ''
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/04/plateau_doc_0012_ver01-scaled.jpg
+  :type: handbook
+  :edition_text: 第1.0版
+  :edition_number: '1.0'
+  :publication_date: 2024-04-04
+  :filesize: 8372986
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0012_ver01.pdf

@@ -1,0 +1,431 @@
+{
+  "pageProps": {
+    "handbooks": {
+      "nodes": [
+        {
+          "id": "cG9zdDo3MQ==",
+          "slug": "00",
+          "handbook": {
+            "title": "3D都市モデルの導入ガイダンス",
+            "description": "Guidance on the Installation for 3D City Model<br />\r\n地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2022/06/1@2x.jpg"
+            },
+            "versions": [
+              {
+                "title": "第4.0版",
+                "date": "2024.4.8",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver04.pdf",
+                "filesize": "22471864",
+                "html": null
+              },
+              {
+                "title": "第3.0版",
+                "date": "2023.4.7",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver03.pdf",
+                "filesize": "32088000",
+                "html": null
+              },
+              {
+                "title": "第2.0版",
+                "date": "2022.6.2",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver02.pdf",
+                "filesize": "27017127",
+                "html": null
+              },
+              {
+                "title": "第1.0版",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver01.pdf",
+                "filesize": "18381880",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo3Mw==",
+          "slug": "01",
+          "handbook": {
+            "title": "3D都市モデル標準製品仕様書",
+            "description": "Standard Data Product Specification for 3D City Model<br />\r\n国際標準規格であるCityGMLによる3D都市モデル整備のための標準製品仕様",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2022/09/2@2x.jpg"
+            },
+            "versions": [
+              {
+                "title": "第4.0版",
+                "date": "2024.3.29",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0001_ver04.pdf",
+                "filesize": null,
+                "html": "https://www.mlit.go.jp/plateaudocument/"
+              },
+              {
+                "title": "第3.5版",
+                "date": "2024.3.22",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0001_ver03.pdf",
+                "filesize": "28596019",
+                "html": null
+              },
+              {
+                "title": "第2.3版",
+                "date": "2022.9.30",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0001_ver02.pdf",
+                "filesize": "16665122",
+                "html": null
+              },
+              {
+                "title": "第1.0版",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0001_ver01.pdf",
+                "filesize": "5040195",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo5NzU=",
+          "slug": "02",
+          "handbook": {
+            "title": "3D都市モデル標準作業手順書",
+            "description": "Standard Implementation Procedures for 3D City Model<br />\r\n国際標準規格であるCityGMLによる3D都市モデル整備のための標準作業手順",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2022/09/3@2x.jpg"
+            },
+            "versions": [
+              {
+                "title": "第4.0版",
+                "date": "2024.3.29",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0002_ver04.pdf",
+                "filesize": null,
+                "html": "https://www.mlit.go.jp/plateaudocument02/"
+              },
+              {
+                "title": "第3.5版",
+                "date": "2024.3.22",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0002_ver03.pdf",
+                "filesize": "43971728",
+                "html": null
+              },
+              {
+                "title": "第2.2版",
+                "date": "2022.9.30",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0002_ver02.pdf",
+                "filesize": "4416870",
+                "html": null
+              },
+              {
+                "title": "第1.0版",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0002_ver01.pdf",
+                "filesize": "2936749",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo5Nzg=",
+          "slug": "03",
+          "handbook": {
+            "title": "3D都市モデル整備のためのBIM活用マニュアル",
+            "description": "Manual for the Integration of BIM Models in 3D City Models with CityGML<br />\r\nBIM（建築情報モデル）を活用して屋内モデルを3D都市モデルに統合するためのマニュアル",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2022/03/4@2x.jpg"
+            },
+            "versions": [
+              {
+                "title": "第3.0版",
+                "date": "2023.3.27",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0003_ver03.pdf",
+                "filesize": "51479909",
+                "html": null
+              },
+              {
+                "title": "第2.0版",
+                "date": "2022.3.29",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0003_ver02.pdf",
+                "filesize": "19629016",
+                "html": null
+              },
+              {
+                "title": "第1.0版",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0003_ver01.pdf",
+                "filesize": "3409322",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo5ODY=",
+          "slug": "03-1",
+          "handbook": {
+            "title": "（別冊）3D都市モデルとの連携のためのBIMモデルIDM・MVD",
+            "description": "情報伝達マニュアル（IDM）・モデルビュー定義（MVD）",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2021/03/plateu_layout_2022_ol-12-scaled.jpg"
+            },
+            "versions": [
+              {
+                "title": "第2.0版",
+                "date": "2023.3.27",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_00031_ver02.pdf",
+                "filesize": "8757397",
+                "html": null
+              },
+              {
+                "title": "第1.0版",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_00031_ver01.pdf",
+                "filesize": "7988260",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo5ODA=",
+          "slug": "05",
+          "handbook": {
+            "title": "3D都市モデルを活用した災害リスク情報の可視化マニュアル",
+            "description": "Manual for the Visualization of Disaster Risk with 3D City Models<br />\r\n災害リスク情報を3D都市モデルと統合表示するためのデータ作成・可視化・実装手順等のマニュアル",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2022/03/6@2x.jpg"
+            },
+            "versions": [
+              {
+                "title": "第2.1版",
+                "date": "2024.3.29",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0005_ver02.pdf",
+                "filesize": "7535082",
+                "html": null
+              },
+              {
+                "title": "第1.0版",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0005_ver01.pdf",
+                "filesize": "10624458",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo5ODI=",
+          "slug": "07",
+          "handbook": {
+            "title": "3D都市モデルのデータ変換マニュアル",
+            "description": "3D City Model Data Conversion Manual<br />\r\nCityGMLを3DCG形式（OBJ/FBX/datasmith)及びBIM形式（IFC）へ変換するためのマニュアル",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2021/03/8@2x.jpg"
+            },
+            "versions": [
+              {
+                "title": "第2.0版",
+                "date": "2024.4.4",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0007_ver02.pdf",
+                "filesize": "8402655",
+                "html": null
+              },
+              {
+                "title": "第1.0版",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0007_ver01.pdf",
+                "filesize": "8996275",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo5ODM=",
+          "slug": "08",
+          "handbook": {
+            "title": "ビジュアルアイデンティティ（VI）マニュアル",
+            "description": "Visual Identity Manual for Project PLATEAU<br />\r\nProject  PLATEAUのロゴマーク及びイメージカラーを利用する場合のマニュアル",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2021/03/9@2x.jpg"
+            },
+            "versions": [
+              {
+                "title": "第2.0版",
+                "date": "2024.3.22",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0008_ver02.pdf",
+                "filesize": "690430",
+                "html": null
+              },
+              {
+                "title": "第1.0版",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0008_ver01.pdf",
+                "filesize": "1430677",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo5ODQ=",
+          "slug": "09",
+          "handbook": {
+            "title": "PLATEAU VIEW構築マニュアル",
+            "description": "3D City Model Demonstration Manual<br />\r\n3D都市モデルの可視化環境構築及びデータ重畳のための仕様・手順等のマニュアル<br />\r\n",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2024/04/plateau_doc_0009_ver04.jpg"
+            },
+            "versions": [
+              {
+                "title": "第4.0版",
+                "date": "2024.4.4",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver04.pdf",
+                "filesize": "15645149",
+                "html": null
+              },
+              {
+                "title": "第3.0版 実証環境構築マニュアル",
+                "date": "2023.4.7",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver03.pdf",
+                "filesize": "16124297",
+                "html": null
+              },
+              {
+                "title": "第2.0版 実証環境構築マニュアル",
+                "date": "2022.5.11",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver02.pdf",
+                "filesize": "6953153",
+                "html": null
+              },
+              {
+                "title": "第1.0版 実証環境構築マニュアル",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver01.pdf",
+                "filesize": "1466949",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo5ODU=",
+          "slug": "10",
+          "handbook": {
+            "title": "3D都市モデル整備のための測量マニュアル",
+            "description": "Manual of Survey for 3D City Modeling<br />\r\n3D都市モデル（建物モデル）の整備のための標準的な測量作業マニュアル",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2021/03/11@2x.jpg"
+            },
+            "versions": [
+              {
+                "title": "第3.0版",
+                "date": "2024.4.2",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0010_ver03.pdf",
+                "filesize": "6769208",
+                "html": null
+              },
+              {
+                "title": "第2.0版",
+                "date": "2023.4.10",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0010_ver02.pdf",
+                "filesize": "4041963",
+                "html": null
+              },
+              {
+                "title": "第1.0版",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0010_ver01.pdf",
+                "filesize": "2173684",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo5Mjk4",
+          "slug": "11",
+          "handbook": {
+            "title": "3D都市モデルのユースケース開発マニュアル",
+            "description": "ユースケース開発のための基本的考え方・事例紹介・技術導入手順等のマニュアル",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2024/04/plateau_doc_0011_ver04.jpg"
+            },
+            "versions": [
+              {
+                "title": "第4.0版",
+                "date": "2024.4.4",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0011_ver04.pdf",
+                "filesize": "33011148",
+                "html": null
+              },
+              {
+                "title": "第3.0版（公共活用編）",
+                "date": "2023.4.4",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0004_ver03.pdf",
+                "filesize": "40980838",
+                "html": null
+              },
+              {
+                "title": "第3.0版（民間活用編）",
+                "date": "2023.4.7",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0006_ver03.pdf",
+                "filesize": "37446056",
+                "html": null
+              },
+              {
+                "title": "第2.0版（公共活用編）",
+                "date": "2022.3.29",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0004_ver02.pdf",
+                "filesize": "26151844",
+                "html": null
+              },
+              {
+                "title": "第2.0版（民間活用編）",
+                "date": "2022.3.29",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0006_ver02.pdf",
+                "filesize": "25995289",
+                "html": null
+              },
+              {
+                "title": "第1.0版（公共活用編）",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0004_ver01.pdf",
+                "filesize": "22362653",
+                "html": null
+              },
+              {
+                "title": "第1.0版（民間活用編）",
+                "date": "2021.3.26",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0006_ver01.pdf",
+                "filesize": "10812148",
+                "html": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "cG9zdDo5Mjk3",
+          "slug": "12",
+          "handbook": {
+            "title": "PLATEAU SDK技術解説書",
+            "description": "PLATEAU SDKの機能と仕様、利用手順を解説したマニュアル",
+            "thumbnail": {
+              "mediaItemUrl": "/plateau/uploads/2024/04/plateau_doc_0012_ver01-scaled.jpg"
+            },
+            "versions": [
+              {
+                "title": "第1.0版",
+                "date": "2024.4.4",
+                "pdf": "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0012_ver01.pdf",
+                "filesize": "8372986",
+                "html": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

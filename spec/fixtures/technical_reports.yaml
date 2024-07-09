@@ -1,0 +1,1322 @@
+---
+- :pubid: 'PLATEAU Tech Report #93'
+  :title_jp: 歴史・文化・営みを継承するメタバース体験の構築 技術検証レポート
+  :abstract_jp: 歴史・文化・営みを継承するメタバース体験の構築の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0093_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 22005029
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0093_ver01.pdf
+  :tags:
+  - Unreal Engine
+  - デジタルツイン
+  - Unity
+  - AR/VR
+- :pubid: 'PLATEAU Tech Report #92'
+  :title_jp: 都市高速道路管理の効率化 技術検証レポート
+  :abstract_jp: 都市高速道路管理の効率化の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0092_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 12288279
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0092_ver01.pdf
+  :tags:
+  - ArcGIS
+  - CesiumJS
+  - デジタルツイン
+  - AI
+- :pubid: 'PLATEAU Tech Report #91'
+  :title_jp: 公園管理のDX 技術検証レポート
+  :abstract_jp: 公園管理のDXの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0091_ver01_01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 11615567
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0091_ver01.pdf
+  :tags:
+  - 可視化
+  - CesiumJS
+  - PostGIS
+  - ダッシュボード
+  - GIS
+- :pubid: 'PLATEAU Tech Report #90'
+  :title_jp: ドローンを用いたインフラ管理システム 技術検証レポート
+  :abstract_jp: ドローンを用いたインフラ管理システムの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0090_ver01-1.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 30208450
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0090_ver01.pdf
+  :tags:
+  - React
+  - CesiumJS
+  - シミュレーション
+  - GIS
+  - ドローン
+- :pubid: 'PLATEAU Tech Report #88'
+  :title_jp: 3D都市モデルに最適化したVPSの開発v3.0 技術検証レポート
+  :abstract_jp: 3D都市モデルに最適化したVPSの開発v3.0の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0088_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 17045334
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0088_ver01.pdf
+  :tags:
+  - VPS
+  - ROS
+  - Unity
+  - AR/VR
+- :pubid: 'PLATEAU Tech Report #87'
+  :title_jp: 3D都市モデルとBIMを活用したモビリティ自律運航システム（車両）v2.0 技術検証レポート
+  :abstract_jp: 3D都市モデルとBIMを活用したモビリティ自律運航システム（車両）v2.0の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0087_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 15073292
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0087_ver01.pdf
+  :tags:
+  - SLAM
+  - ROS2
+- :pubid: 'PLATEAU Tech Report #86'
+  :title_jp: 3D都市モデルとBIMを活用したモビリティ自律運航システム（ドローン）v2.0 技術検証レポート
+  :abstract_jp: 3D都市モデルとBIMを活用したモビリティ自律運航システム（ドローン）v2.0の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0086_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 11471943
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0086_ver01.pdf
+  :tags:
+  - OpenCV
+  - SLAM
+  - ROS
+  - ドローン
+- :pubid: 'PLATEAU Tech Report #85'
+  :title_jp: デジタルツインを活用したXRコンテンツ開発プラットフォーム 技術検証レポート
+  :abstract_jp: デジタルツインを活用したXRコンテンツ開発プラットフォームの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0085_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 19374901
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0085_ver01.pdf
+  :tags:
+  - CesiumJS
+  - VPS
+  - Unity
+  - AR/VR
+- :pubid: 'PLATEAU Tech Report #84'
+  :title_jp: 市民協働による樹木管理DX 技術検証レポート
+  :abstract_jp: 市民協働による樹木管理DXの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0084_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 13837469
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0084_ver01.pdf
+  :tags:
+  - 可視化
+  - CesiumJS
+  - ゲーミフィケーション
+  - GIS
+  - AI
+- :pubid: 'PLATEAU Tech Report #83'
+  :title_jp: 下水熱利用促進のためのマッチングシステム 技術検証レポート
+  :abstract_jp: 下水熱利用促進のためのマッチングシステムの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0083_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 9489331
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0083_ver01.pdf
+  :tags:
+  - ArcGIS
+  - 可視化
+  - シミュレーション
+  - GIS
+- :pubid: 'PLATEAU Tech Report #82'
+  :title_jp: ゲーミフィケーションによる参加型まちづくりv2.0 技術検証レポート
+  :abstract_jp: ゲーミフィケーションによる参加型まちづくりv2.0の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0082_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 12539531
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0082_ver01.pdf
+  :tags:
+  - ゲーミフィケーション
+- :pubid: 'PLATEAU Tech Report #81'
+  :title_jp: ストーリーテリング型GISを用いたエリアマネジメントの高度化 技術検証レポート
+  :abstract_jp: ストーリーテリング型GISを用いたエリアマネジメントの高度化の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0081_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 16706152
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0081_ver01.pdf
+  :tags:
+  - React
+  - 可視化
+  - CesiumJS
+  - GIS
+- :pubid: 'PLATEAU Tech Report #80'
+  :title_jp: エリアマネジメント・ダッシュボードの構築v2.0 技術検証レポート
+  :abstract_jp: エリアマネジメント・ダッシュボードの構築v2.0の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0080_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 26898628
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0080_ver01.pdf
+  :tags:
+  - React
+  - 可視化
+  - CesiumJS
+  - PostGIS
+  - ダッシュボード
+  - TerriaJS
+  - GIS
+- :pubid: 'PLATEAU Tech Report #79'
+  :title_jp: タンジブルインターフェースを活用した住民参加型まちづくり等 技術検証レポート
+  :abstract_jp: タンジブルインターフェースを活用した住民参加型まちづくり等の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0079_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 13413660
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0079_ver01.pdf
+  :tags:
+  - OpenCV
+  - Three.js
+  - Unity
+- :pubid: 'PLATEAU Tech Report #78'
+  :title_jp: XR技術を活用した住民参加型まちづくりv2.0 技術検証レポート
+  :abstract_jp: XR技術を活用した住民参加型まちづくりv2.0の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0078_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 28435251
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0078_ver01.pdf
+  :tags:
+  - Blender
+  - React
+  - ゲーミフィケーション
+  - QGIS
+  - Unity
+  - AR/VR
+  - GIS
+- :pubid: 'PLATEAU Tech Report #77'
+  :title_jp: 都市構造シミュレーションv2.0 技術検証レポート
+  :abstract_jp: 都市構造シミュレーションv2.0の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0077_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 15011857
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0077_ver01.pdf
+  :tags:
+  - ArcGIS
+  - シミュレーション
+  - QGIS
+- :pubid: 'PLATEAU Tech Report #76'
+  :title_jp: 開発許可のDX v2.0 技術検証レポート
+  :abstract_jp: 開発許可のDX v2.0の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0076_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 38346915
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0076_ver01.pdf
+  :tags:
+  - CesiumJS
+  - PostGIS
+  - TerriaJS
+  - GIS
+- :pubid: 'PLATEAU Tech Report #75'
+  :title_jp: 地下街データを活用したナビゲーションシステム 技術検証レポート
+  :abstract_jp: 地下街データを活用したナビゲーションシステムの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0075_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 14338976
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0075_ver01.pdf
+  :tags:
+  - IoT
+  - ArcGIS
+  - CesiumJS
+  - PostGIS
+  - QGIS
+  - デジタルツイン
+  - AR/VR
+  - GIS
+- :pubid: 'PLATEAU Tech Report #74'
+  :title_jp: 地下埋設物データを活用した都市開発のDX 技術検証レポート
+  :abstract_jp: 地下埋設物データを活用した都市開発のDXの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0074_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 15688421
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0074_ver01.pdf
+  :tags:
+  - OpenCV
+  - 可視化
+  - CesiumJS
+  - QGIS
+  - デジタルツイン
+  - GIS
+- :pubid: 'PLATEAU Tech Report #73'
+  :title_jp: 損害保険支払い作業の迅速化等 技術検証レポート
+  :abstract_jp: 損害保険支払い作業の迅速化等の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0073_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 10750556
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0073_ver01.pdf
+  :tags:
+  - ArcGIS
+  - シミュレーション
+  - CFD
+  - ダッシュボード
+  - GIS
+- :pubid: 'PLATEAU Tech Report #72'
+  :title_jp: 精緻な土砂災害シミュレーション 技術検証レポート
+  :abstract_jp: 精緻な土砂災害シミュレーションの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0072_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 11936590
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0072_ver01.pdf
+  :tags:
+  - シミュレーション
+  - CFD
+  - QGIS
+  - GIS
+- :pubid: 'PLATEAU Tech Report #71'
+  :title_jp: 人工衛星観測データを用いた浸水被害把握 技術検証レポート
+  :abstract_jp: 人工衛星観測データを用いた浸水被害把握の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0071_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Use Case
+  :filesize: 8610156
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0071_ver01.pdf
+  :tags:
+  - PyTorch
+  - OpenCV
+  - GIS
+  - AI
+- :pubid: 'PLATEAU Tech Report #70'
+  :title_jp: 3D都市モデル、BIMモデル、空間IDを統合した都市開発支援ツールの開発 技術検証レポート
+  :abstract_jp: 3D都市モデル、BIMモデル、空間IDを統合した都市開発支援ツールの開発の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0070_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Data
+  :filesize: 17386088
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0070_ver01.pdf
+  :tags:
+  - 人流データ
+- :pubid: 'PLATEAU Tech Report #69'
+  :title_jp: 3D都市モデルを活用した高精度デジタルツイン構築 技術検証レポート
+  :abstract_jp: 3D都市モデルを活用した高精度デジタルツイン構築の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0069_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Data
+  :filesize: 9814612
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0069_ver01.pdf
+  :tags:
+  - PostGIS
+  - デジタルツイン
+  - AI
+- :pubid: 'PLATEAU Tech Report #68'
+  :title_jp: 3D都市モデル・不動産IDマッチングシステム 技術検証レポート
+  :abstract_jp: 3D都市モデル・不動産IDマッチングシステムの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0068_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Data
+  :filesize: 8035301
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0068_ver01.pdf
+  :tags:
+  - PostGIS
+- :pubid: 'PLATEAU Tech Report #67'
+  :title_jp: 多方向カメラを用いた空中写真測量による3D都市モデル整備手法に関する調査 技術検証レポート
+  :abstract_jp: 多方向カメラを用いた空中写真測量による3D都市モデル整備手法に関する技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0067_ver01-scaled.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Data
+  :filesize: 4087502
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0067_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #66'
+  :title_jp: 3D都市モデルの標準仕様の有用性に関する調査レポート
+  :abstract_jp: 3D都市モデルの標準仕様の有用性に関する技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0066_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Data
+  :filesize: 4819505
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0066_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #63'
+  :title_jp: CityGML に最適化されたデータベース構築手法に関する調査技術レポート
+  :abstract_jp: CityGML に最適化されたデータベース構築手法に関する技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0063_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Data
+  :filesize: 8996276
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0063_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #62'
+  :title_jp: 3D都市モデルのテクスチャ高解像度化手法及び描画パフォーマンス向上に関する技術調査レポート
+  :abstract_jp: 描画パフォーマンスの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0062_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Data
+  :filesize: 6048939
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0062_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #61'
+  :title_jp: AI等を活用したLOD2自動生成ツールの開発及びOSS化技術検証レポート
+  :abstract_jp: AI等を活用したLOD2自動生成ツールの開発及びOSSの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0061_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Data
+  :filesize: 15574537
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0061_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #60'
+  :title_jp: 3D都市モデルに最適化されたWebGIS開発に関する調査レポート
+  :abstract_jp: WebGISエンジンの最適化の技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0060_ver01-scaled.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Data
+  :filesize: 4158887
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0060_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #59'
+  :title_jp: WebGISに関する技術調査レポート
+  :abstract_jp: Webの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0059_ver01-scaled.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-29
+  :subtype:
+  - Data
+  :filesize: 12506792
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0059_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #58'
+  :title_jp: ストーリーテリング型WebGIS の開発と活用に関する技術調査レポート
+  :abstract_jp: ストーリーテリングの技術資料 (2023年度)
+  :cover: https://www.mlit.go.jp//plateau/uploads/2024/03/plateau_tech_doc_0058_ver01-scaled.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2024-03-15
+  :subtype:
+  - Data
+  :filesize: 17650783
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0058_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #57'
+  :title_jp: CityGML3.0 技術仕様調査レポート（2022年度）
+  :abstract_jp: CityGML3.0の技術仕様に関する調査資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/07/57_cover.png
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-07-18
+  :subtype:
+  - Data
+  :filesize: 8634368
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0057_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #53'
+  :title_jp: AIを用いた3D都市モデルの自動更新手法 技術検証レポート
+  :abstract_jp: AIを用いた3D都市モデルの自動更新手法開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/04/plateau_tech_doc_0053_ver01.png
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-04-10
+  :subtype:
+  - Data
+  :filesize: 17917514
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0053_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #54'
+  :title_jp: 短周期かつ効率的な3D都市モデルの更新手法 技術検証レポート
+  :abstract_jp: 短周期かつ効率的な3D都市モデルの更新手法の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/04/plateau_tech_doc_0054_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-04-04
+  :subtype:
+  - Data
+  :filesize: 9500556
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0054_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #56'
+  :title_jp: AI等を活用したLOD2自動生成ツールの開発及びOSS化 技術検証レポート
+  :abstract_jp: AI等を活用したLOD2自動生成ツールの開発及びOSS化の技術資料
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/04/plateau_tech_doc_0056_ver01.jpeg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-04-04
+  :subtype:
+  - Data
+  :filesize: 12187772
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0056_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #48'
+  :title_jp: 都市空間の統合デジタルツイン 技術検証レポート
+  :abstract_jp: 都市空間の統合デジタルツイン構築の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0048_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-30
+  :subtype:
+  - Use Case
+  :filesize: 8852549
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0048_ver01.pdf
+  :tags:
+  - Omniverse
+  - VPS
+  - デジタルツイン
+- :pubid: 'PLATEAU Tech Report #19'
+  :title_jp: 雪害対策支援ツール 技術検証レポート
+  :abstract_jp: 雪害対策支援ツール開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/02/tech_doc_0019_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-30
+  :subtype:
+  - Use Case
+  :filesize: 12859530
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0019_ver01.pdf
+  :tags:
+  - OpenFOAM
+  - シミュレーション
+  - QGIS
+  - Unity
+  - GIS
+- :pubid: 'PLATEAU Tech Report #51'
+  :title_jp: 3D都市モデルを基礎としたIDマッチング基盤 技術検証レポート
+  :abstract_jp: 3D都市モデルを基礎としたIDマッチング基盤開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0051_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-29
+  :subtype:
+  - Use Case
+  :filesize: 13473752
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0051_ver01.pdf
+  :tags:
+  - PostGIS
+  - GIS
+- :pubid: 'PLATEAU Tech Report #46_1'
+  :title_jp: 3D都市モデルとBIMを活用したモビリティ自律運行システム 技術検証レポート（ドローン編）
+  :abstract_jp: 3D都市モデルとBIMを活用したモビリティ自律運行システム開発の技術資料（ドローン編）（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0046_1_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-29
+  :subtype:
+  - Use Case
+  :filesize: 5901080
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0046_1_ver01.pdf
+  :tags:
+  - SLAM
+  - ROS2
+  - Unity
+  - ドローン
+- :pubid: 'PLATEAU Tech Report #45'
+  :title_jp: 広告効果シミュレーションシステム 技術検証レポート
+  :abstract_jp: 広告効果シミュレーションシステム開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0045_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-29
+  :subtype:
+  - Use Case
+  :filesize: 9637288
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0045_ver01.pdf
+  :tags:
+  - 人流データ
+  - CesiumJS
+  - シミュレーション
+  - Unity
+  - AR/VR
+  - ARCore
+- :pubid: 'PLATEAU Tech Report #40'
+  :title_jp: 歩行者移動・回遊行動シミュレーション 技術検証レポート
+  :abstract_jp: 歩行者移動・回遊行動シミュレーションの技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0040_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-29
+  :subtype:
+  - Use Case
+  :filesize: 10148417
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0040_ver01.pdf
+  :tags:
+  - 人流データ
+  - シミュレーション
+  - QGIS
+  - Unity
+- :pubid: 'PLATEAU Tech Report #37'
+  :title_jp: 三次元データを用いた土砂災害対策 技術検証レポート
+  :abstract_jp: 三次元データを用いた土砂災害対策検討手法開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0037_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-29
+  :subtype:
+  - Use Case
+  :filesize: 8846414
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0037_ver01.pdf
+  :tags:
+  - CesiumJS
+  - VPS
+  - AR/VR
+  - ARCore
+- :pubid: 'PLATEAU Tech Report #55'
+  :title_jp: PLATEAUのための空間ID生成ツール 技術検証レポート
+  :abstract_jp: "「三次元空間ID」付与のための自動生成ツール開発の技術資料（2022年度）"
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0055_ver01-scaled.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Data
+  :filesize: 13971949
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0055_ver01.pdf
+  :tags: []
+- :pubid: 'PLATEAU Tech Report #50'
+  :title_jp: 3D都市モデルの更新優先度マップ 技術検証レポート
+  :abstract_jp: 3D都市モデルの更新優先度マップ開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0050_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 15138135
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0050_ver01.pdf
+  :tags:
+  - PyTorch
+  - OpenCV
+  - 可視化
+  - AI
+- :pubid: 'PLATEAU Tech Report #49'
+  :title_jp: ドローンリアルタイム・ナビゲーションシステム 技術検証レポート
+  :abstract_jp: ドローンリアルタイム・ナビゲーションシステム開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0049_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 5217848
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0049_ver01.pdf
+  :tags:
+  - SLAM
+  - CesiumJS
+  - ROS
+  - ドローン
+- :pubid: 'PLATEAU Tech Report #46_2'
+  :title_jp: 3D都市モデルとBIMを活用したモビリティ自律運行システム 技術検証レポート（無人搬送車両編）
+  :abstract_jp: 3D都市モデルとBIMを活用したモビリティ自律運行システム開発の技術資料（無人搬送車両編）（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0046_2_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 5804212
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0046_2_ver01.pdf
+  :tags:
+  - SLAM
+  - ROS2
+  - Unity
+  - ドローン
+- :pubid: 'PLATEAU Tech Report #43'
+  :title_jp: 地域エネルギーマネジメント支援システム 技術検証レポート
+  :abstract_jp: 地域エネルギーマネジメント支援システム開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0043_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 5943148
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0043_ver01.pdf
+  :tags:
+  - 人流データ
+  - シミュレーション
+- :pubid: 'PLATEAU Tech Report #42'
+  :title_jp: まちづくり教育ツール 技術検証レポート
+  :abstract_jp: まちづくり教育ツール開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0042_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 9375379
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0042_ver01.pdf
+  :tags:
+  - Blender
+  - AR.js
+  - Three.js
+  - AR/VR
+- :pubid: 'PLATEAU Tech Report #41'
+  :title_jp: 容積率可視化シミュレータ 技術検証レポート
+  :abstract_jp: 容積率可視化シミュレータ開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0041_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 13665935
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0041_ver01.pdf
+  :tags:
+  - CesiumJS
+  - シミュレーション
+  - Babylon.js
+- :pubid: 'PLATEAU Tech Report #35'
+  :title_jp: 自動運転車両の自己位置推定におけるVPS（Visual Positioning System）活用Ver2 技術検証レポート
+  :abstract_jp: 自動運転車両の自己位置推定におけるVPS（Visual Positioning System）活用の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0035_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 4922240
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0035_ver01.pdf
+  :tags:
+  - 自動運転
+  - VPS
+  - Unity
+- :pubid: 'PLATEAU Tech Report #32'
+  :title_jp: まちなかウォーキングのための健康アプリ 技術検証レポート
+  :abstract_jp: まちなかウォーキングのための健康アプリ開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0032_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 14250441
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0032_ver01.pdf
+  :tags:
+  - CesiumJS
+  - シミュレーション
+  - PostGIS
+- :pubid: 'PLATEAU Tech Report #28'
+  :title_jp: 壁面太陽光発電のポテンシャル推計 技術検証レポート
+  :abstract_jp: 壁面太陽光発電のポテンシャル推計の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/02/tech_doc_0028_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 14369254
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0028_ver01.pdf
+  :tags:
+  - シミュレーション
+- :pubid: 'PLATEAU Tech Report #23'
+  :title_jp: エリアマネジメント・ダッシュボード構築 技術検証レポート
+  :abstract_jp: エリアマネジメント・ダッシュボード構築の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0023_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 17787394
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0023_ver01.pdf
+  :tags:
+  - 可視化
+  - CesiumJS
+  - PostGIS
+  - ダッシュボード
+  - TerriaJS
+- :pubid: 'PLATEAU Tech Report #22'
+  :title_jp: ウォーカブルな空間設計のためのスマート・プランニング 技術検証レポート
+  :abstract_jp: ウォーカブルな空間設計のためのスマート・プランニング手法開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/02/tech_doc_0022_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 3980237
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0022_ver01.pdf
+  :tags:
+  - 人流データ
+  - シミュレーション
+  - QGIS
+  - AR/VR
+  - GIS
+- :pubid: 'PLATEAU Tech Report #21'
+  :title_jp: エリアマネジメントのデジタルツイン化Ver2 技術検証レポート
+  :abstract_jp: デジタルツイン上で災害情報を統合するプラットフォーム開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/02/tech_doc_0021_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 8920342
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0021_ver01.pdf
+  :tags:
+  - Unreal Engine
+  - IoT
+  - 可視化
+  - 人流データ
+  - UE4
+  - デジタルツイン
+- :pubid: 'PLATEAU Tech Report #16'
+  :title_jp: 防犯設備設置計画支援ツール 技術検証レポート
+  :abstract_jp: 防犯設備設置計画支援ツール開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/02/tech_doc_0016_ver01.png
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 3834784
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0016_ver01.pdf
+  :tags:
+  - ArcGIS
+  - シミュレーション
+- :pubid: 'PLATEAU Tech Report #15'
+  :title_jp: 災害廃棄物発生量シミュレーション 技術検証レポート
+  :abstract_jp: 災害廃棄物発生量シミュレーションの技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0015_ver01.jpeg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 13547093
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0015_ver01.pdf
+  :tags:
+  - シミュレーション
+  - QGIS
+- :pubid: 'PLATEAU Tech Report #11'
+  :title_jp: WebGIS技術を用いた水害対策アプリケーションの開発 技術検証レポート
+  :abstract_jp: ARを活用した災害リスク可視化ツール開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/tech_doc_0011_ver01.jpeg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-28
+  :subtype:
+  - Use Case
+  :filesize: 25512932
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0011_ver01.pdf
+  :tags:
+  - CesiumJS
+  - シミュレーション
+  - PostGIS
+  - AR/VR
+- :pubid: 'PLATEAU Tech Report #52'
+  :title_jp: 景観まちづくりDX 技術検証レポート
+  :abstract_jp: 景観計画や開発計画をVR空間で容易に再現可能なツール開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0052_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 8366399
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0052_ver01.pdf
+  :tags:
+  - シミュレーション
+  - Unity
+- :pubid: 'PLATEAU Tech Report #47'
+  :title_jp: ドローン最適ルートシミュレーション 技術検証レポート
+  :abstract_jp: ドローン最適ルートシミュレーションの技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0047_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 12994316
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0047_ver01.pdf
+  :tags:
+  - CesiumJS
+  - シミュレーション
+  - ドローン
+- :pubid: 'PLATEAU Tech Report #44'
+  :title_jp: 都市AR空間とメタバースの連携プラットフォーム 技術検証レポート
+  :abstract_jp: 都市AR空間とメタバースの連携プラットフォーム開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0044_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 6656529
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0044_ver01.pdf
+  :tags:
+  - VPS
+  - Unity
+  - AR/VR
+  - ARCore
+- :pubid: 'PLATEAU Tech Report #39'
+  :title_jp: 防災エリアマネジメントDX 技術検証レポート
+  :abstract_jp: 大規模誘導・避難シミュレーションの技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0039_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 11161043
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0039_ver01.pdf
+  :tags:
+  - IoT
+  - 人流データ
+  - シミュレーション
+  - UE4
+  - ダッシュボード
+  - CesiumForUnreal
+  - デジタルツイン
+  - AI
+- :pubid: 'PLATEAU Tech Report #38'
+  :title_jp: XR技術を活用した市民参加型まちづくり 技術検証レポート
+  :abstract_jp: XR技術を活用した市民参加型まちづくり手法開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0038_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 12789601
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0038_ver01.pdf
+  :tags:
+  - CesiumJS
+  - PostGIS
+  - ゲーミフィケーション
+  - AR/VR
+  - GIS
+- :pubid: 'PLATEAU Tech Report #36'
+  :title_jp: ドローンによる建築物外壁検査 技術検証レポート
+  :abstract_jp: ドローンによる建築物外壁検査手法開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0036_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 9950192
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0036_ver01.pdf
+  :tags:
+  - シミュレーション
+- :pubid: 'PLATEAU Tech Report #34'
+  :title_jp: ローカル5G電波シミュレーションを活かした基地局配置計画 技術検証レポート
+  :abstract_jp: ローカル5G電波シミュレーションを活かした基地局配置計画手法開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0034_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 8762565
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0034_ver01.pdf
+  :tags:
+  - シミュレーション
+- :pubid: 'PLATEAU Tech Report #33'
+  :title_jp: 3D都市モデルプラグイン共有プラットフォーム 技術検証レポート
+  :abstract_jp: 3D都市モデルプラグイン共有プラットフォーム開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0033_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 5344639
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0033_ver01.pdf
+  :tags:
+  - CesiumJS
+  - GIS
+- :pubid: 'PLATEAU Tech Report #31'
+  :title_jp: 3D都市モデルを活用した気候変動影響シミュレーション 技術検証レポート
+  :abstract_jp: 気候変動影響シミュレーションの技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0031_ver01.jpeg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 11397226
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0031_ver01.pdf
+  :tags:
+  - シミュレーション
+  - CFD
+- :pubid: 'PLATEAU Tech Report #30'
+  :title_jp: カーボンニュートラル施策推進支援システム 技術検証レポート
+  :abstract_jp: カーボンニュートラル施策推進支援システム開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/02/plateau_tech_doc_0030_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 17667638
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0030_ver01.pdf
+  :tags:
+  - シミュレーション
+- :pubid: 'PLATEAU Tech Report #29'
+  :title_jp: ヒートアイランド・シミュレーション 技術検証レポート
+  :abstract_jp: ヒートアイランド・シミュレーションの技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/02/plateau_tech_doc_0029_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 7280081
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0029_ver01.pdf
+  :tags:
+  - シミュレーション
+  - CFD
+- :pubid: 'PLATEAU Tech Report #27'
+  :title_jp: 都市構造シミュレーション 技術検証レポート
+  :abstract_jp: 都市構造シミュレーション開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/02/plateau_tech_doc_0027_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 11624061
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0027_ver01.pdf
+  :tags:
+  - ArcGIS
+  - シミュレーション
+  - QGIS
+- :pubid: 'PLATEAU Tech Report #26'
+  :title_jp: 都市OSと連携した都市政策シミュレーション 技術検証レポート
+  :abstract_jp: 都市OSと連携した都市政策シミュレーション技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/02/plateau_tech_doc_0026_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 12454884
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0026_ver01.pdf
+  :tags:
+  - 人流データ
+  - CesiumJS
+  - シミュレーション
+  - GIS
+- :pubid: 'PLATEAU Tech Report #25'
+  :title_jp: XR技術を用いた体感型アーバンプランニングツール 技術検証レポート
+  :abstract_jp: XR技術を用いた体感型アーバンプランニングツール開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/02/plateau_tech_doc_0025_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 11793624
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0025_ver01.pdf
+  :tags:
+  - AR.js
+  - Three.js
+  - AR/VR
+- :pubid: 'PLATEAU Tech Report #24'
+  :title_jp: 開発許可のDX 技術検証レポート
+  :abstract_jp: 開発行為の適地診断・申請システム開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0024_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 8424800
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0024_ver01.pdf
+  :tags:
+  - CesiumJS
+  - GIS
+- :pubid: 'PLATEAU Tech Report #20'
+  :title_jp: ゲーミフィケーションによる参加型まちづくり 技術検証レポート
+  :abstract_jp: ゲーミフィケーションによる参加型まちづくり手法開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0020_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 10421165
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0020_ver01.pdf
+  :tags:
+  - ゲーミフィケーション
+- :pubid: 'PLATEAU Tech Report #18'
+  :title_jp: 徒歩及び車による時系列水害避難行動シミュレーション 技術検証レポート
+  :abstract_jp: 徒歩及び車による時系列水害避難行動シミュレーションの技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0018_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 7462903
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0018_ver01.pdf
+  :tags:
+  - CesiumJS
+  - シミュレーション
+- :pubid: 'PLATEAU Tech Report #17'
+  :title_jp: 地域防災支援プラグイン 技術検証レポート
+  :abstract_jp: 地域防災支援プラグイン開発の技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0017_ver01.jpeg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 5453553
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0017_ver01.pdf
+  :tags:
+  - CesiumJS
+  - シミュレーション
+- :pubid: 'PLATEAU Tech Report #14'
+  :title_jp: 高度な浸水シミュレーション 技術検証レポート
+  :abstract_jp: 高度な浸水シミュレーションの技術資料（2022年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2023/03/plateau_tech_doc_0014_ver01.jpg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2023-03-27
+  :subtype:
+  - Use Case
+  :filesize: 8668659
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0014_ver01.pdf
+  :tags:
+  - ArcGIS
+  - CesiumJS
+  - シミュレーション
+  - TerriaJS
+- :pubid: 'PLATEAU Tech Report #03'
+  :title_jp: 3D都市モデルLOD3データ作成実証レポート
+  :abstract_jp: 3D都市モデルLOD3のデータ作成実証の技術資料（2021年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/03/plateau_tech_doc_0003_ver01-scaled.jpeg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2022-03-29
+  :subtype:
+  - Data
+  :filesize: 21753721
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0003_ver01.pdf
+  :tags:
+  - デジタルツイン
+  - CityGML
+- :pubid: 'PLATEAU Tech Report #02'
+  :title_jp: 3D都市モデルを活用したエリアマネジメント活動可視化技術検証レポート
+  :abstract_jp: エリアマネジメント活動可視化システム開発実証の技術資料（2021年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/03/plateau_tech_doc_0002_ver01-1-scaled.jpeg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2022-03-29
+  :subtype:
+  - Use Case
+  :filesize: 12505850
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0002_ver01.pdf
+  :tags:
+  - ダッシュボード
+  - Three.js
+- :pubid: 'PLATEAU Tech Report #01'
+  :title_jp: 3D都市モデルを活用した太陽光発電施設の設置シミュレーション技術検証レポート
+  :abstract_jp: 太陽光パネル設置シミュレータ開発実証の技術資料（2021年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/03/plateau_tech_doc_0001_ver01-1-scaled.jpeg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2022-03-29
+  :subtype:
+  - Use Case
+  :filesize: 10198388
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0001_ver01.pdf
+  :tags:
+  - ArcGIS
+  - シミュレーション
+- :pubid: 'PLATEAU Tech Report #00'
+  :title_jp: 3D都市モデルを活用した自動運転車両の自己位置推定技術検証レポート
+  :abstract_jp: 自動運転車両の自己位置推定システム開発実証の技術資料（2021年度）
+  :cover: https://www.mlit.go.jp//plateau/uploads/2022/03/plateau_tech_doc_0000_ver01-1-scaled.jpeg
+  :type: technical-report
+  :edition_text: '1.0'
+  :edition_number: '1.0'
+  :publication_date: 2022-03-29
+  :subtype:
+  - Use Case
+  :filesize: 18971353
+  :url_pdf: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0000_ver01.pdf
+  :tags:
+  - VPS
+  - Unity
