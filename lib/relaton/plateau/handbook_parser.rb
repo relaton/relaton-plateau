@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# encoding: UTF-8
 
 module Relaton
   module Plateau
@@ -14,8 +14,12 @@ module Relaton
 
       private
 
+      def edition
+        @edition ||= @version["title"].split.first
+      end
+
       def parse_docid
-        super << create_docid("PLATEAU Handbook ##{@entry["slug"]} #{@version["title"]}")
+        super << create_docid("PLATEAU Handbook ##{@entry["slug"]} #{edition}")
       end
 
       def parse_title
@@ -31,8 +35,8 @@ module Relaton
       end
 
       def parse_edition
-        number = @version["title"].match(/\d\.\d/)[0]
-        RelatonBib::Edition.new(content: @version["title"], number: number)
+        number = edition.match(/\d\.\d/)[0]
+        RelatonBib::Edition.new(content: edition, number: number)
       end
 
       def parse_doctype
@@ -57,7 +61,7 @@ module Relaton
 
       def parse_structuredidentifier
         strid = RelatonBib::StructuredIdentifier.new(
-          type: "Handbook", agency: ["PLATEAU"], docnumber: @entry["slug"], edition: @version["title"]
+          type: "Handbook", agency: ["PLATEAU"], docnumber: @entry["slug"], edition: edition
         )
         RelatonBib::StructuredIdentifierCollection.new [strid]
       end

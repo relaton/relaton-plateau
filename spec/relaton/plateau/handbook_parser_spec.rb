@@ -1,21 +1,24 @@
 RSpec.describe Relaton::Plateau::HandbookParser do
   let(:version) do
     {
-      "title" => "1.0",
-      "date" => "2020.01.01",
-      "pdf" => "https://example.com/1.0.pdf",
-      "html" => "https://example.com/1.0.html",
-      "filesize" => 123
+      "title" => "第3.0版 実証環境構築マニュアル",
+      "date" => "2023.4.7",
+      "pdf" => "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver03.pdf",
+      "filesize" => "16124297",
+      "html" => nil
     }
   end
 
   let(:entry) do
     {
-      "slug" => "slug",
+      "id" => "cG9zdDo5ODQ=",
+      "slug" => "09",
       "handbook" => {
-        "title" => "title",
-        "thumbnail" => { "mediaItemUrl" => "thumbnail" },
-        "description" => "title\nabstract"
+        "title" => "PLATEAU VIEW構築マニュアル",
+        "description" => "3D City Model Demonstration Manual<br />\r\n3D都市モデルの可視化環境構築及びデータ重畳のための仕様・手順等のマニュアル<br />\r\n",
+        "thumbnail" => {
+          "mediaItemUrl" => "/plateau/uploads/2024/04/plateau_doc_0009_ver04.jpg"
+        },
       }
     }
   end
@@ -43,7 +46,7 @@ RSpec.describe Relaton::Plateau::HandbookParser do
     expect(docid).to be_instance_of Array
     expect(docid.size).to eq 1
     expect(docid[0]).to be_instance_of RelatonBib::DocumentIdentifier
-    expect(docid[0].id).to eq "PLATEAU Handbook #slug 1.0"
+    expect(docid[0].id).to eq "PLATEAU Handbook #09 第3.0版"
     expect(docid[0].type).to eq "PLATEAU"
     expect(docid[0].primary).to be true
   end
@@ -53,7 +56,7 @@ RSpec.describe Relaton::Plateau::HandbookParser do
     expect(title).to be_instance_of Array
     expect(title.size).to eq 2
     expect(title[0]).to be_instance_of RelatonBib::TypedTitleString
-    expect(title[0].title.content).to eq "title"
+    expect(title[0].title.content).to eq "PLATEAU VIEW構築マニュアル"
     expect(title[0].title.language).to eq ["ja"]
     expect(title[0].title.script).to eq ["Jpan"]
     expect(title[1]).to be_instance_of RelatonBib::TypedTitleString
@@ -75,8 +78,8 @@ RSpec.describe Relaton::Plateau::HandbookParser do
   it "parse_edition" do
     edition = subject.send :parse_edition
     expect(edition).to be_instance_of RelatonBib::Edition
-    expect(edition.content).to eq "1.0"
-    expect(edition.number).to eq "1.0"
+    expect(edition.content).to eq "第3.0版"
+    expect(edition.number).to eq "3.0"
   end
 
   it "parse_doctype" do
@@ -91,23 +94,35 @@ RSpec.describe Relaton::Plateau::HandbookParser do
     expect(date.size).to eq 1
     expect(date[0]).to be_instance_of RelatonBib::BibliographicDate
     expect(date[0].type).to eq "published"
-    expect(date[0].on).to eq "2020-01-01"
+    expect(date[0].on).to eq "2023-04-07"
   end
 
-  it "parse_link" do
-    link = subject.send :parse_link
-    expect(link).to be_instance_of Array
-    expect(link.size).to eq 2
-    expect(link[0]).to be_instance_of RelatonBib::TypedUri
-    expect(link[0].content.to_s).to eq "https://example.com/1.0.pdf"
-    expect(link[0].type).to eq "pdf"
-    expect(link[1]).to be_instance_of RelatonBib::TypedUri
-    expect(link[1].content.to_s).to eq "https://example.com/1.0.html"
-    expect(link[1].type).to eq "html"
+  context "parse_link" do
+    it "pdf only" do
+      link = subject.send :parse_link
+      expect(link).to be_instance_of Array
+      expect(link.size).to eq 1
+      expect(link[0]).to be_instance_of RelatonBib::TypedUri
+      expect(link[0].content.to_s).to eq "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver03.pdf"
+      expect(link[0].type).to eq "pdf"
+    end
+
+    it "pdf and html" do
+      version["html"] = "https://example.com/1.0.html"
+      link = subject.send :parse_link
+      expect(link).to be_instance_of Array
+      expect(link.size).to eq 2
+      expect(link[0]).to be_instance_of RelatonBib::TypedUri
+      expect(link[0].content.to_s).to eq "https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0009_ver03.pdf"
+      expect(link[0].type).to eq "pdf"
+      expect(link[1]).to be_instance_of RelatonBib::TypedUri
+      expect(link[1].content.to_s).to eq "https://example.com/1.0.html"
+      expect(link[1].type).to eq "html"
+    end
   end
 
   it "parse_filesize" do
-    expect(subject.send(:parse_filesize)).to eq 123
+    expect(subject.send(:parse_filesize)).to eq 16124297
   end
 
   it "parse_structuredidentifier" do
@@ -116,7 +131,7 @@ RSpec.describe Relaton::Plateau::HandbookParser do
     expect(strid[0]).to be_instance_of RelatonBib::StructuredIdentifier
     expect(strid[0].type).to eq "Handbook"
     expect(strid[0].agency).to eq ["PLATEAU"]
-    expect(strid[0].docnumber).to eq "slug"
-    expect(strid[0].edition).to eq "1.0"
+    expect(strid[0].docnumber).to eq "09"
+    expect(strid[0].edition).to eq "第3.0版"
   end
 end
