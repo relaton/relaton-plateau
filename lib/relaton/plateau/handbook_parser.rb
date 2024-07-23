@@ -1,0 +1,66 @@
+# frozen_string_literal: true
+
+module Relaton
+  module Plateau
+    class HandbookParser < Parser
+      def initialize(version:, entry:, title_en:, abstract:, doctype:)
+        @version = version
+        @entry = entry
+        super entry["handbook"]
+        @title_en = title_en
+        @abstract = abstract
+        @doctype = doctype
+      end
+
+      private
+
+      def parse_docid
+        super << create_docid("PLATEAU Handbook ##{@entry["slug"]} #{@version["title"]}")
+      end
+
+      def parse_title
+        title = super
+        title << create_title(@title_en, "en", "Latn") if @title_en
+        title
+      end
+
+      def parse_abstract
+        abstr = super
+        abstr << create_formatted_string(@abstract) if @abstract
+        abstr
+      end
+
+      def parse_edition
+        number = @version["title"].match(/\d\.\d/)[0]
+        RelatonBib::Edition.new(content: @version["title"], number: number)
+      end
+
+      def parse_doctype
+        RelatonBib::DocumentType.new type: @doctype
+      end
+
+      def parse_date
+        super << create_date(@version["date"].gsub(".", "-"))
+      end
+
+      def parse_link
+        %w[pdf html].map do |type|
+          next unless @version[type]
+
+          create_link(@version[type], type)
+        end.compact
+      end
+
+      def parse_filesize
+        @version["filesize"].to_i
+      end
+
+      def parse_structuredidentifier
+        strid = RelatonBib::StructuredIdentifier.new(
+          type: "Handbook", agency: ["PLATEAU"], docnumber: @entry["slug"], edition: @version["title"]
+        )
+        RelatonBib::StructuredIdentifierCollection.new [strid]
+      end
+    end
+  end
+end

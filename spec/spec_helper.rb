@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+require "rspec/matchers"
+require "equivalent-xml"
+Dir["./spec/support/**/*.rb"].sort.each { |f| require f }
+
 require "relaton/plateau"
 
 RSpec.configure do |config|
