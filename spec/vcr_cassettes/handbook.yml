@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/relaton/relaton-data-plateau/main/data/plateau_handbook_00_10.yaml
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - raw.githubusercontent.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1075'
+      Cache-Control:
+      - max-age=300
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'; sandbox
+      Content-Type:
+      - text/plain; charset=utf-8
+      Etag:
+      - W/"75e65a44924a146de0cbbca6ca554967c57c073ff8a00a721998224240caf9fd"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - D94D:2B029:6260:6E9C:66A067C2
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 24 Jul 2024 02:35:28 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-iad-kjyo7100078-IAD
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1721788529.776226,VS0,VE2
+      Vary:
+      - Authorization,Accept-Encoding,Origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Cross-Origin-Resource-Policy:
+      - cross-origin
+      X-Fastly-Request-Id:
+      - 229c345cfbc97d5834e5c0c0e4606fb8020fa96c
+      Expires:
+      - Wed, 24 Jul 2024 02:40:28 GMT
+      Source-Age:
+      - '153'
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        LS0tCnNjaGVtYS12ZXJzaW9uOiB2MS4yLjkKaWQ6IFBMQVRFQVVIYW5kYm9v
+        ayMwMOesrDEuMOeJiAp0aXRsZToKLSBjb250ZW50OiAzROmDveW4guODouOD
+        h+ODq+OBruWwjuWFpeOCrOOCpOODgOODs+OCuQogIGxhbmd1YWdlOgogIC0g
+        amEKICBzY3JpcHQ6CiAgLSBKcGFuCiAgZm9ybWF0OiB0ZXh0L3BsYWluCiAg
+        dHlwZTogbWFpbgotIGNvbnRlbnQ6IEd1aWRhbmNlIG9uIHRoZSBJbnN0YWxs
+        YXRpb24gZm9yIDNEIENpdHkgTW9kZWwKICBsYW5ndWFnZToKICAtIGVuCiAg
+        c2NyaXB0OgogIC0gTGF0bgogIGZvcm1hdDogdGV4dC9wbGFpbgogIHR5cGU6
+        IG1haW4KbGluazoKLSBjb250ZW50OiBodHRwczovL3d3dy5tbGl0LmdvLmpw
+        L3BsYXRlYXUvZmlsZS9saWJyYXJpZXMvZG9jL3BsYXRlYXVfZG9jXzAwMDBf
+        dmVyMDEucGRmCiAgdHlwZTogcGRmCnR5cGU6IHN0YW5kYXJkCmRvY2lkOgot
+        IGlkOiAnUExBVEVBVSBIYW5kYm9vayAjMDAg56ysMS4w54mIJwogIHR5cGU6
+        IFBMQVRFQVUKICBwcmltYXJ5OiB0cnVlCmRhdGU6Ci0gdHlwZTogcHVibGlz
+        aGVkCiAgdmFsdWU6ICcyMDIxLTAzLTI2JwplZGl0aW9uOgogIGNvbnRlbnQ6
+        IOesrDEuMOeJiAogIG51bWJlcjogJzEuMCcKcmV2ZGF0ZTogJzIwMjEtMDMt
+        MjYnCmFic3RyYWN0OgotIGNvbnRlbnQ6IOWcsOaWueiHquayu+S9k+aLheW9
+        k+iAheOChOawkemWk+S6i+alreiAheetieOBq+WQkeOBkeOBnyAzROmDveW4
+        guODouODh+ODq+WwjuWFpeOBruOBn+OCgeOBruOCrOOCpOODgOODs+OCuQog
+        IGxhbmd1YWdlOgogIC0gamEKICBzY3JpcHQ6CiAgLSBKcGFuCiAgZm9ybWF0
+        OiB0ZXh0L3BsYWluCmRvY3R5cGU6CiAgdHlwZTogaGFuZGJvb2sKc3RydWN0
+        dXJlZGlkZW50aWZpZXI6Ci0gZG9jbnVtYmVyOiAnMDAnCiAgdHlwZTogSGFu
+        ZGJvb2sKICBhZ2VuY3k6CiAgLSBQTEFURUFVCiAgZWRpdGlvbjog56ysMS4w
+        54mICmNvdmVyOgogIGltYWdlOgogICAgc3JjOiBodHRwczovL3d3dy5tbGl0
+        LmdvLmpwLy9wbGF0ZWF1L3VwbG9hZHMvMjAyMi8wNi8xQDJ4LmpwZwogICAg
+        bWltZXR5cGU6IGltYWdlL2pwZWcKZmlsZXNpemU6IDE4MzgxODgwCg==
+  recorded_at: Wed, 24 Jul 2024 02:35:28 GMT
+recorded_with: VCR 6.2.0

@@ -61,7 +61,7 @@ RSpec.describe Relaton::Plateau::TechnicalReportParser do
 
   it "parse_doctype" do
     doctype = subject.send :parse_doctype
-    expect(doctype).to be_instance_of RelatonBib::DocumentType
+    expect(doctype).to be_instance_of Relaton::Plateau::DocumentType
     expect(doctype.type).to eq "technical-report"
   end
 

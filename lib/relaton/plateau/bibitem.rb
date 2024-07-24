@@ -54,9 +54,12 @@ module Relaton
 
       def to_hash
         hash = super
-        hash["stagename"] = stagename.to_hash if stagename
-        hash["cover"] = cover.to_hash if cover
-        hash["filesize"] = filesize if filesize
+        return hash unless has_ext_data?
+
+        hash["ext"] ||= {}
+        hash["ext"]["stagename"] = stagename.to_hash if stagename
+        hash["ext"]["cover"] = cover.to_hash if cover
+        hash["ext"]["filesize"] = filesize if filesize
         hash
       end
 

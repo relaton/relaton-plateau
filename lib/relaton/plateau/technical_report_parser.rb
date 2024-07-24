@@ -21,7 +21,7 @@ module Relaton
       end
 
       def parse_doctype
-        RelatonBib::DocumentType.new type: "technical-report"
+        DocumentType.new type: "technical-report"
       end
 
       def parse_subdoctype

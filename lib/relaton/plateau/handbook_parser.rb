@@ -40,7 +40,7 @@ module Relaton
       end
 
       def parse_doctype
-        RelatonBib::DocumentType.new type: @doctype
+        DocumentType.new type: @doctype
       end
 
       def parse_date

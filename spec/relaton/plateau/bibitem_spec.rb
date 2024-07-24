@@ -1,7 +1,7 @@
 RSpec.describe Relaton::Plateau::BibItem do
   let(:title) { RelatonBib::TypedTitleString.new(type: "main", content: "Title", language: "en", script: "Latn") }
   let(:docid) { RelatonBib::DocumentIdentifier.new(type: "PLATEAU", id: "id", parimary: true) }
-  let(:doctype) { RelatonBib::DocumentType.new(type: "Handbook") }
+  let(:doctype) { Relaton::Plateau::DocumentType.new(type: "Handbook") }
   let(:strid) { RelatonBib::StructuredIdentifier.new(type: "Handbook", agency: ["PLATEAU"], docnumber: "docnumber") }
   let(:stidcol) { RelatonBib::StructuredIdentifierCollection.new [strid] }
   let(:stagename) { Relaton::Plateau::Stagename.new(content: "stage name", abbreviation: "SN") }
@@ -66,7 +66,7 @@ RSpec.describe Relaton::Plateau::BibItem do
     expect(subject.to_hash).to eq(
       "schema-version" => "v1.2.9", "id" => "id", "title" => [title.to_hash], "docid" => [docid.to_hash],
       "doctype" => doctype.to_hash, "subdoctype" => "subdoctype", "structuredidentifier" => [strid.to_hash],
-      "stagename" => stagename.to_hash, "cover" => cover.to_hash, "filesize" => 123
+      "ext" => { "stagename" => stagename.to_hash, "cover" => cover.to_hash, "filesize" => 123 }
     )
   end
 

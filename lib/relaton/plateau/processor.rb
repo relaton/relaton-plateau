@@ -30,20 +30,20 @@ module Relaton
       # @option opts [String] :format output format (xml, yaml, bibxml)
       #
       def fetch_data(source, opts)
-        DataFetcher.fetch(source, **opts)
+        Fetcher.fetch(source, **opts)
       end
 
       # @param xml [String]
-      # @return [Relaton::Plateau::BibliographicItem]
+      # @return [Relaton::Plateau::BibItem]
       def from_xml(xml)
         ::Relaton::Plateau::XMLParser.from_xml xml
       end
 
       # @param hash [Hash]
-      # @return [Relaton:Plateau::BibliographicItem]
+      # @return [Relaton:Plateau::BibItem]
       def hash_to_bib(hash)
         item_hash = HashConverter.hash_to_bib(hash)
-        ::Relaton::Plateau::BibliographicItem.new(**item_hash)
+        ::Relaton::Plateau::BibItem.new(**item_hash)
       end
 
       # Returns hash of XML grammar
@@ -62,7 +62,7 @@ module Relaton
       # Remove index file
       #
       def remove_index_file
-        Relaton::Index.find_or_create(:plateau, url: true, file: HitCollection::INDEXFILE).remove_file
+        Relaton::Index.find_or_create(:plateau, url: true, file: Bibliography::INDEXFILE).remove_file
       end
     end
   end

@@ -1,7 +1,4 @@
 require "json"
-require "net/http"
-require "uri"
-require "date"
 require_relative "parser"
 require_relative "handbook_parser"
 require_relative "technical_report_parser"
@@ -114,7 +111,7 @@ module Relaton
       #
       def extract_handbooks_data
         data = fetch_json_data(HANDBOOKS_URL)
-        # puts "Extracting handbooks data..."
+        Util.info "Extracting handbooks data..."
         data["pageProps"]["handbooks"]["nodes"].each do |entry|
           handbook = entry["handbook"]
           versions = handbook["versions"]
@@ -156,7 +153,7 @@ module Relaton
       #
       def extract_technical_reports_data
         data = fetch_json_data(TECHNICAL_REPORTS_URL)
-        puts "Extracting technical reports data..."
+        Util.info "Extracting technical reports data..."
         data["pageProps"]["nodes"].map do |entry|
           save_document(TechnicalReportParser.new(entry).parse)
 
