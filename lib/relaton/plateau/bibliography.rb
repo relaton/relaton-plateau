@@ -24,7 +24,7 @@ module Relaton
       end
 
       def search(code)
-        rows = index.search(code)
+        rows = index.search { |r| r[:id] ==  code }
         return unless rows.any?
 
         row = rows.sort_by { |r| r[:id] }.last

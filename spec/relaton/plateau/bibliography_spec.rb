@@ -25,8 +25,8 @@ RSpec.describe Relaton::Plateau::Bibliography do
     end
 
     it "not found", vcr: "not_found" do
-      expect { described_class.get("PLATEAU Handbook NE") }.to output(
-        including("[relaton-plateau] WARN: (PLATEAU Handbook NE) Not found.")
+      expect { described_class.get("PLATEAU Handbook #03") }.to output(
+        including("[relaton-plateau] WARN: (PLATEAU Handbook #03) Not found.")
       ).to_stderr_from_any_process
     end
 
