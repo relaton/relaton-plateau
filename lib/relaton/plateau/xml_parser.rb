@@ -36,7 +36,7 @@ module Relaton
           fs.text.to_i
         end
 
-        def fetfh_stagename(ext)
+        def fetch_stagename(ext)
           sn = ext.at("./stagename")
           return unless sn
 

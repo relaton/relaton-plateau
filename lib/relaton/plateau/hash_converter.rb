@@ -10,36 +10,36 @@ module Relaton
         return unless ret
         return ret unless ret[:ext]
 
-        ext = ret[:ext]
-        hash_to_bib_cover ext
-        hash_to_bib_filesize ext
-        hash_to_bib_stagename ext
+        hash_to_bib_cover ret
+        hash_to_bib_filesize ret
+        hash_to_bib_stagename ret
+        ret.delete :ext
         ret
       end
 
-      def hash_to_bib_cover(ext)
-        return unless ext[:cover]
+      def hash_to_bib_cover(ret)
+        return unless ret[:ext][:cover]
 
-        image = ext[:cover][:image]
-        ext[:cover] = Cover.new(RelatonBib::Image.new(**image))
+        image = ret[:ext][:cover][:image]
+        ret[:cover] = Cover.new(RelatonBib::Image.new(**image))
       end
 
-      def hash_to_bib_filesize(ext)
-        return unless ext[:filesize]
+      def hash_to_bib_filesize(ret)
+        return unless ret[:ext][:filesize]
 
-        ext[:filesize] = ext[:filesize].to_i
+        ret[:filesize] = ret[:ext][:filesize].to_i
       end
 
-      def hash_to_bib_stagename(ext)
-        return unless ext[:stagename]
+      def hash_to_bib_stagename(ret)
+        return unless ret[:ext][:stagename]
 
-        ext[:stagename] = Stagename.new(**ext[:stagename])
+        ret[:stagename] = Stagename.new(**ret[:ext][:stagename])
       end
 
       # @param item_hash [Hash]
       # @return [RelatonCie::BibliographicItem]
       def bib_item(item_hash)
-        BibliographicItem.new(**item_hash)
+        BibItem.new(**item_hash)
       end
 
       def create_doctype(**args)

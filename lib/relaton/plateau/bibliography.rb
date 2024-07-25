@@ -12,25 +12,32 @@ module Relaton
 
       def get(code, year = nil, opts = {})
         Util.info "Fetching ...", key: code
-        rows = index.search(code)
-        return if rows.empty?
-
-        row = rows.sort_by { |r| r[:id] }.last
-        get_doc code, **row
+        bib = search(code)
+        if bib
+          Util.info "Found `#{bib.docidentifier.first.id}`", key: code
+          bib
+        else
+          Util.warn "Not found.", key: code
+        end
       rescue StandardError => e
         raise RelatonBib::RequestError, e.message
       end
 
-      def get_doc(code, id:, file:)
+      def search(code)
+        rows = index.search(code)
+        return unless rows.any?
+
+        row = rows.sort_by { |r| r[:id] }.last
+        fetch_doc code, **row
+      end
+
+      def fetch_doc(code, id:, file:)
         resp = Net::HTTP.get_response URI("#{GHURL}#{file}")
-        if resp.is_a? Net::HTTPSuccess
-          Util.info "Found `#{id}`", key: code
-          hash = YAML.load(resp.body)
-          args = HashConverter.hash_to_bib hash
-          BibItem.new(**args)
-        else
-          Util.warn "Failed to fetch.", key: code
-        end
+        return unless resp.is_a? Net::HTTPSuccess
+
+        hash = YAML.load(resp.body)
+        args = HashConverter.hash_to_bib hash
+        BibItem.new(**args)
       end
     end
   end

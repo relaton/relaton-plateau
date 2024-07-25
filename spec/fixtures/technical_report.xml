@@ -1,0 +1,25 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="ja" script="Jpan">3D都市モデルを活用した自動運転車両の自己位置推定技術検証レポート</title>
+  <uri type="pdf">https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0000_ver01.pdf</uri>
+  <docidentifier type="PLATEAU" primary="true">PLATEAU Tech Report #00</docidentifier>
+  <date type="published">
+    <on>2022-03-29</on>
+  </date>
+  <edition number="1.0">1.0</edition>
+  <abstract format="text/plain" language="ja" script="Jpan">自動運転車両の自己位置推定システム開発実証の技術資料（2021年度）</abstract>
+  <keyword>VPS</keyword>
+  <keyword>Unity</keyword>
+  <ext>
+    <doctype>technical-report</doctype>
+    <subdoctype>Use Case</subdoctype>
+    <structuredidentifier type="Tech Report">
+      <agency>PLATEAU</agency>
+      <class>Use Case</class>
+      <docnumber>00</docnumber>
+    </structuredidentifier>
+    <cover>
+      <image src="https://www.mlit.go.jp//plateau/uploads/2022/03/plateau_tech_doc_0000_ver01-1-scaled.jpeg" mimetype="image/jpeg"/>
+    </cover>
+    <filesize>18971353</filesize>
+  </ext>
+</bibdata>

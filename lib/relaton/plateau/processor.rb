@@ -6,7 +6,7 @@ module Relaton
       attr_reader :idtype
 
       def initialize # rubocop:disable Lint/MissingSuper
-        @short = :relaton_plateau
+        @short = :"relaton/plateau"
         @prefix = "PLATEAU"
         @defaultprefix = /^PLATEAU\s/
         @idtype = "PLATEAU"
@@ -62,7 +62,7 @@ module Relaton
       # Remove index file
       #
       def remove_index_file
-        Relaton::Index.find_or_create(:plateau, url: true, file: Bibliography::INDEXFILE).remove_file
+        Relaton::Index.find_or_create(:plateau, url: true, file: "#{Bibliography::INDEXFILE}.yaml").remove_file
       end
     end
   end

@@ -15,6 +15,8 @@ module Relaton
   module Plateau
     class Error < StandardError; end
 
-    # Your code goes here...
+    def self.grammar_hash
+      Digest::MD5.hexdigest Relaton::Plateau::VERSION + RelatonBib::VERSION # grammars
+    end
   end
 end

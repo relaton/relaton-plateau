@@ -33,9 +33,189 @@ Or install it yourself as:
 
 === Fetching
 
-[source,sh]
+[source,ruby]
 ----
-$ exe/test-fetch.rb
+require "relaton/plateau"
+
+bib = Relaton::Plateau::Bibliography.get("PLATEAU Handbook #00 第1.0版")
+[relaton-plateau] INFO: (PLATEAU Handbook #00 第1.0版) Fetching ...
+[relaton-plateau] INFO: (PLATEAU Handbook #00 第1.0版) Found `PLATEAU Handbook #00 第1.0版`
+=> #<Relaton::Plateau::BibItem:0x0000000104afbcc0
+...
+----
+
+=== Serializing
+
+==== XML
+
+[source,ruby]
+----
+# Render bibitem
+puts bib.to_xml
+<bibitem id="PLATEAUHandbook#00第1.0版" type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="ja" script="Jpan">3D都市モデルの導入ガイダンス</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Guidance on the Installation for 3D City Model</title>
+  <uri type="pdf">https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver01.pdf</uri>
+  <docidentifier type="PLATEAU" primary="true">PLATEAU Handbook #00 第1.0版</docidentifier>
+  <date type="published">
+    <on>2021-03-26</on>
+  </date>
+  <edition number="1.0">第1.0版</edition>
+  <abstract format="text/plain" language="ja" script="Jpan">地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス</abstract>
+</bibitem>
+
+# Render bibdata
+puts bib.to_xml(bibdata: true)
+<bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="ja" script="Jpan">3D都市モデルの導入ガイダンス</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Guidance on the Installation for 3D City Model</title>
+  <uri type="pdf">https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver01.pdf</uri>
+  <docidentifier type="PLATEAU" primary="true">PLATEAU Handbook #00 第1.0版</docidentifier>
+  <date type="published">
+    <on>2021-03-26</on>
+  </date>
+  <edition number="1.0">第1.0版</edition>
+  <abstract format="text/plain" language="ja" script="Jpan">地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス</abstract>
+  <ext>
+    <doctype>handbook</doctype>
+    <structuredidentifier type="Handbook">
+      <agency>PLATEAU</agency>
+      <docnumber>00</docnumber>
+      <edition>第1.0版</edition>
+    </structuredidentifier>
+    <cover>
+      <image src="https://www.mlit.go.jp//plateau/uploads/2022/06/1@2x.jpg" mimetype="image/jpeg"/>
+    </cover>
+    <filesize>18381880</filesize>
+  </ext>
+</bibdata>
+----
+
+==== YAML
+[source,ruby]
+----
+puts bib.to_hash.to_yaml
+---
+schema-version: v1.2.9
+id: PLATEAUHandbook#00第1.0版
+title:
+- content: 3D都市モデルの導入ガイダンス
+  language:
+  - ja
+  script:
+  - Jpan
+  format: text/plain
+  type: main
+- content: Guidance on the Installation for 3D City Model
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+  type: main
+link:
+- content: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver01.pdf
+  type: pdf
+type: standard
+docid:
+- id: 'PLATEAU Handbook #00 第1.0版'
+  type: PLATEAU
+  primary: true
+date:
+- type: published
+  value: '2021-03-26'
+edition:
+  content: 第1.0版
+  number: '1.0'
+revdate: '2021-03-26'
+abstract:
+- content: 地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス
+  language:
+  - ja
+  script:
+  - Jpan
+  format: text/plain
+doctype:
+  type: handbook
+structuredidentifier:
+- docnumber: '00'
+  type: Handbook
+  agency:
+  - PLATEAU
+  edition: 第1.0版
+ext:
+  cover:
+    image:
+      src: https://www.mlit.go.jp//plateau/uploads/2022/06/1@2x.jpg
+      mimetype: image/jpeg
+  filesize: 18381880
+----
+
+==== BibXML
+
+[source,ruby]
+----
+puts bib.to_bibxml
+<reference anchor="PLATEAU.Handbook.#00.第1.0版">
+  <front>
+    <title>3D都市モデルの導入ガイダンス</title>
+    <date year="2021" month="March" day="26"/>
+    <abstract>地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス</abstract>
+  </front>
+</reference>
+----
+
+==== AsciiBib
+
+[source,ruby]
+----
+puts bib.to_asciibib
+[%bibitem]
+== {blank}
+id:: PLATEAUHandbook#00第1.0版
+title::
+title.type:: main
+title.content:: 3D都市モデルの導入ガイダンス
+title.language:: ja
+title.script:: Jpan
+title.format:: text/plain
+title::
+title.type:: main
+title.content:: Guidance on the Installation for 3D City Model
+title.language:: en
+title.script:: Latn
+title.format:: text/plain
+type:: standard
+docid.type:: PLATEAU
+docid.primary:: true
+docid.id:: PLATEAU Handbook #00 第1.0版
+edition.content:: 第1.0版
+edition.number:: 1.0
+date.type:: published
+date.on:: 2021-03-26
+abstract.content:: 地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス
+abstract.language:: ja
+abstract.script:: Jpan
+abstract.format:: text/plain
+link.type:: pdf
+link.content:: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0000_ver01.pdf
+doctype.type:: handbook
+structured_identifier.docnumber:: 00
+structured_identifier.agency:: PLATEAU
+structured_identifier.type:: Handbook
+structured_identifier.edition:: 第1.0版
+cover.image.src:: https://www.mlit.go.jp//plateau/uploads/2022/06/1@2x.jpg
+cover.image.mimetype:: image/jpeg
+filesize:: 18381880
+----
+
+=== Fetching data
+
+Two datasets are available for fetching: `platau-handbooks` and `plateau-technical-reports`. The data is stored in the `data` directory. The format can be `xml`, 'yaml', or `bibxml`.
+
+[source,ruby]
+----
+Relaton::Plateau::Fetcher.fetch("plateau-handbooks", output: "dir", format: "xml")
 ----
 
 == Contributing
