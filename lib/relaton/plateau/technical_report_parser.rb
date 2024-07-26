@@ -9,7 +9,7 @@ module Relaton
       private
 
       def parse_docid
-        super << create_docid("PLATEAU Tech Report ##{@entry["slug"]}")
+        super << create_docid("PLATEAU Technical Report ##{@entry["slug"]}")
       end
 
       def parse_abstract

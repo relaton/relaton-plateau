@@ -39,7 +39,7 @@ RSpec.describe Relaton::Plateau::TechnicalReportParser do
     expect(docid).to be_instance_of Array
     expect(docid.size).to eq 1
     expect(docid[0]).to be_instance_of RelatonBib::DocumentIdentifier
-    expect(docid[0].id).to eq "PLATEAU Tech Report #93"
+    expect(docid[0].id).to eq "PLATEAU Technical Report #93"
     expect(docid[0].type).to eq "PLATEAU"
     expect(docid[0].primary).to be true
   end
