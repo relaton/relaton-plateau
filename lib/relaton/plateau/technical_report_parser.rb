@@ -46,7 +46,7 @@ module Relaton
 
       def parse_structuredidentifier
         strid = RelatonBib::StructuredIdentifier.new(
-          type: "Tech Report", class: parse_subdoctype, agency: ["PLATEAU"], docnumber: @entry["slug"]
+          type: "Technical Report", class: parse_subdoctype, agency: ["PLATEAU"], docnumber: @entry["slug"]
         )
         RelatonBib::StructuredIdentifierCollection.new [strid]
       end

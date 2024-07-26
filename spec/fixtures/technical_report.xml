@@ -1,7 +1,7 @@
 <bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="ja" script="Jpan">3D都市モデルを活用した自動運転車両の自己位置推定技術検証レポート</title>
   <uri type="pdf">https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0000_ver01.pdf</uri>
-  <docidentifier type="PLATEAU" primary="true">PLATEAU Tech Report #00</docidentifier>
+  <docidentifier type="PLATEAU" primary="true">PLATEAU Technical Report #00</docidentifier>
   <date type="published">
     <on>2022-03-29</on>
   </date>

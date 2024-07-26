@@ -39,18 +39,6 @@ module Relaton
         puts "Done in: #{(t2 - t1).round} sec."
       end
 
-      # def fetch_handbooks
-      #   data = fetch_json_data(HANDBOOKS_URL)
-      #   extracted_data = extract_handbooks_data(data)
-      #   save_to_yaml(extracted_data, "handbooks.yaml")
-      # end
-
-      # def fetch_technical_reports
-      #   data = fetch_json_data(TECHNICAL_REPORTS_URL)
-      #   extracted_data = extract_technical_reports_data(data)
-      #   save_to_yaml(extracted_data, "technical_reports.yaml")
-      # end
-
       # Create a GET request with custom headers to mimic a browser
       def create_request(uri)
         request = Net::HTTP::Get.new(uri)
@@ -127,22 +115,6 @@ module Relaton
               version: version, entry: entry, title_en: title_en, abstract: abstract, doctype: doctype
             ).parse
             save_document(item)
-
-            # ::Relaton::Plateau::BibItem.new(
-            #   pubid: "PLATEAU Handbook ##{entry["slug"]}",
-            #   title_jp: handbook["title"],
-            #   title_en: title_en,
-            #   abstract_jp: abstract_jp,
-            #   cover: "https://www.mlit.go.jp/#{handbook["thumbnail"]["mediaItemUrl"]}",
-            #   type: document_type,
-            #   publication_date: Date.parse(version["date"].gsub(".", "-")),
-            #   url_pdf: version["pdf"],
-            #   url_html: version["html"],
-            #   filesize: version["filesize"].to_i,
-            #   edition_number: version["title"].match(/\d\.\d/)[0],
-            #   edition_text: version["title"],
-            #   # tags: [],
-            # )
           end
         end
         index.save
@@ -156,34 +128,9 @@ module Relaton
         Util.info "Extracting technical reports data..."
         data["pageProps"]["nodes"].map do |entry|
           save_document(TechnicalReportParser.new(entry).parse)
-
-          # technical_report = entry["technicalReport"]
-
-          # ::Relaton::Plateau::BibItem.new(
-          #   title_jp: technical_report["title"],
-          #   abstract_jp: technical_report["subtitle"],
-          #   cover: "https://www.mlit.go.jp/#{technical_report["thumbnail"]["mediaItemUrl"]}",
-          #   pubid: "PLATEAU Tech Report ##{entry["slug"]}",
-          #   type: "technical-report",
-          #   subtype: entry["technicalReportCategories"]["nodes"].map { |cat| cat["name"] },
-          #   publication_date: Date.parse(entry["date"]),
-          #   url_pdf: technical_report["pdf"],
-          #   filesize: technical_report["filesize"].to_i,
-          #   edition_number: "1.0",
-          #   edition_text: "1.0",
-          #   tags: entry["globalTags"]["nodes"].map { |tag| tag["name"] },
-          # )
-
         end
         index.save
       end
-
-      # def self.save_to_yaml(data, filename)
-      #   File.open(filename, "w") do |file|
-      #     file.write(data.to_yaml)
-      #   end
-      #   puts "Data saved to #{filename}."
-      # end
 
       def save_document(item)
         id = item.docidentifier.first.id

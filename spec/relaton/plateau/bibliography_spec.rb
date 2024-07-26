@@ -17,7 +17,7 @@ RSpec.describe Relaton::Plateau::Bibliography do
 
     it "technical-report", vcr: "technical_report" do
       file = "spec/fixtures/technical_report.xml"
-      bib = described_class.get("PLATEAU Tech Report #00")
+      bib = described_class.get("PLATEAU Technical Report #00")
       expect(bib).to be_instance_of Relaton::Plateau::BibItem
       xml = bib.to_xml bibdata: true
       File.write file, xml, encoding: "UTF-8" unless File.exist? file

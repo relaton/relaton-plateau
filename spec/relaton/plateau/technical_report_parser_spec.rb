@@ -104,7 +104,7 @@ RSpec.describe Relaton::Plateau::TechnicalReportParser do
     strid = subject.send :parse_structuredidentifier
     expect(strid).to be_instance_of RelatonBib::StructuredIdentifierCollection
     expect(strid[0]).to be_instance_of RelatonBib::StructuredIdentifier
-    expect(strid[0].type).to eq "Tech Report"
+    expect(strid[0].type).to eq "Technical Report"
     expect(strid[0].klass).to eq "Use Case"
     expect(strid[0].agency).to eq ["PLATEAU"]
     expect(strid[0].docnumber).to eq "93"

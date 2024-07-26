@@ -21,7 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1040'
+      - '1053'
       Cache-Control:
       - max-age=300
       Content-Security-Policy:
@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - application/zip
       Etag:
-      - W/"a887306354b8e39ebaea3491ca9c758575d42f636b576759457d848054c40355"
+      - W/"9e7f0bd0e9e371565fd27d331ccb31b1a46ada14c11cccdea0608ae3b7cc3f2d"
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -39,21 +39,21 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 2E61:299D3:1191A4:13FC81:66A08004
+      - 33F2:1C5449:3C241:43ADD:66A31A4A
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 24 Jul 2024 04:16:04 GMT
+      - Fri, 26 Jul 2024 03:38:50 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-iad-kjyo7100020-IAD
+      - cache-iad-kjyo7100155-IAD
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1721794565.893322,VS0,VE80
+      - S1721965130.107341,VS0,VE87
       Vary:
       - Authorization,Accept-Encoding,Origin
       Access-Control-Allow-Origin:
@@ -61,39 +61,39 @@ http_interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       X-Fastly-Request-Id:
-      - fc8dcb2e1d23e92c5a9ed3f95923dc344321b0e4
+      - a426b3a11172135e111ca1b8a9e6c557f0f0e70c
       Expires:
-      - Wed, 24 Jul 2024 04:21:04 GMT
+      - Fri, 26 Jul 2024 03:43:50 GMT
       Source-Age:
       - '0'
     body:
       encoding: ASCII-8BIT
       base64_string: |
-        UEsDBBQAAAAIAFYh+FgSkGk0YAMAADolAAANABwAaW5kZXgtdjEueWFtbFVU
-        CQADw36gZsN+oGZ1eAsAAQTpAwAABH8AAAClmb1qG1EQhXs/xYILV3LuzNy/
-        VecikCJFCE69yJaCRZTYGDmQBzDYZUjIM7hQkUAgRfw6tnDlV4gcGcIWF383
-        qr2cnTn3m3NH3sFgsDVohtPxsNl59XJv//nem+bF6MP44Pj4XbPtXLNcLPyu
-        W15e7Gw1zfDtdDYZNuPRfPTsZDaaT0Zn3dHj051znXe7n0bvZ08qGlY0qKhY
-        UaGiYEV5WlFqfBTio6x9DFDRAlPUXYOKakyR+ijER63xUYmPWuOjEh917aNC
-        RVWmSH1U4qPVTKGRKbSaKTQyhVbTtaGuB1JVpaAyB1WYG+I8rOsUJBk6FaZI
-        iwykxlTjZSJWppoaE6kx19SYSY25psZMamxrMq0lmdbWTHdLprut8bElPrY1
-        PrbAR6nZLIRsFlKzWQjZLKRmsxCyWUjNZiFksxD55+P99cXN+eLm/Mftz9/L
-        r1fLX1f315fkNea6k7OD2fSw8m233z/fffvyP287nX5c/YG9TjdrTuua082a
-        08rmZLPmpK452aw54c3VLEFSXoL2J4dHzevJyfHpvNlurSQ1Xz3Wnf59rGsL
-        m25fSpFUYdnrSwmSKtz5fSmHpIhXOROpnIlUQlKJSEUkFYlUQFKFHwB9KY+k
-        PJFCiGaCaEaIZoJoRohmgmhGiGaCaGqJVGqJFKI9EdoToj0R2hOiPRHaE6I9
-        EdoToj0R2hOiPRHaE6I9EdoToj0R2hOiPRHaI6I9Etojoj0S2iOiPRLaI6I9
-        Etoj4ioSriLiKhKuIuIqEq4i4ioSrgLiKhCuAuIqEK4C4ioQrgKCIRAYAoq+
-        QKIvINoDod0j2z2xXRAMgmBAtAdCu48dEnt4jsihu9CTu9CjOSz9Cu9JGSLe
-        EPGowUAaDKjBQBr0iC1P2FodNIrlh+eIHEoITxLCs7pQVYx5QrwhIEofO/pS
-        qEEjDSrKLSW5pegES9+w+lKowdJnnL4UOsHSf/P7wYyuCyHXhSAYhMAgqEEh
-        DQZke0CDg5LUkyT16ML35MI3FH9G4s/Q4BgZHENcGeHKkFeGvELjbGScDSFq
-        KEXRXVj60NBPBgSDEhgU0a6EdkUwKIFBUcgoCRlFXCnhStEJlj7s9KMPzaCg
-        pRudoJATFOSVEK8cmkFHZtChbHck2x0aZ0fG2SEY3CMMfwBQSwECHgMUAAAA
-        CABWIfhYEpBpNGADAAA6JQAADQAYAAAAAAABAAAApIEAAAAAaW5kZXgtdjEu
-        eWFtbFVUBQADw36gZnV4CwABBOkDAAAEfwAAAFBLBQYAAAAAAQABAFMAAACn
-        AwAAAAA=
-  recorded_at: Wed, 24 Jul 2024 04:16:04 GMT
+        UEsDBBQAAAAIAIIc+liqkrfHbQMAAHgoAAANABwAaW5kZXgtdjEueWFtbFVU
+        CQADpBmjZqQZo2Z1eAsAAQTpAwAABH8AAAClmb9OFFEUxnueYhIKqsV7zrn/
+        ZjsKEwsLY7CeDLCGjSsQspj4ACRQGo3PQEGhiYmFvA5srHgFwcVYODf8rlsz
+        +eac736/c88yo9FobdSMp3vjZuPF863tp1uvmmf9wd7O4eGbZt25ZnF56Tfd
+        4vxsY61pxq+ns8m42evn/ZOjWT+f9Cfd/sPTnXOdd5vv+7ezRxUNKxpUVKyo
+        UFGwojyuKDU+CvFRlj4GqGiBKeqmQUU1pkh9FOKj1vioxEet8VGJj7r0UaGi
+        KlOkPirx0WooNEKh1VBohEKr6dpQ1yOpqlJQmaOqmBvKeVjWKUgydCpMkRYZ
+        SI2pxstErEw1NSZSY66pMZMac02NmdTY1sy0lsy0tobultDd1vjYEh/bGh9b
+        4KPUbBZCNgup2SyEbBZSs1kI2SykZrMQslmI/PXx9urs+vTy+vTrzbcfi08X
+        i+8Xt1fn5DXmuqOTndl0t/JtN18+/Pz88X/edjx9d/cH9jpdrTmta05Xa04r
+        m5PVmpO65mS15oQ3V7MESXkJ2p7s7h9Md/tZ83JydHg8b9ZbK+nN/zzbHf9+
+        tmsLO++AqHLRwgI4ICpctLARDIg6Loo9zRmL5oxFExdNWDRy0YhFAxct/KAY
+        EPVc1GNRHv6Mw595+DMOf+bhzzj8mYc/4/CnFoumFotyohImKnGiEiYqcaIS
+        JipxohImKnGiEiYqcaISJipxohImKnGiEiYqcaISJipyoiImKnKiIiYqcqIi
+        JipyoiImKvKcRpzTyHMacU4jz2nEOY08pxHnNPCcBpzTwHMacE4Dz2nAOQ08
+        UgFHKvAhHfCQDpyogIny/KA8PijhkRIeKU5UwET52HHZ+4exML/7Pb77Pee/
+        9D+Tf0WNU2WcKt5+wO0H3n7A7XueVY+zepcUfqncP4yF+bTyeFr5ilp5pRVc
+        YaqMx6r00WtAlLdvuH3lc1XxXFV++qUvnQOivP3SZ78BUX76pe9AA9cKvwAF
+        X4DCIyU4UsLbF9x+4AcVOKZ8+ns8/T1ffzxef4wPasOD2jimhjE1nlPDOTXu
+        qXFP+UAxPFCMh9/45Od3f+kj2cCU4pFSHCnlRCkmSnmkFEdK+ehTPPqU51Rx
+        TpWffumD5sCQ5uwL/+nDT1/w6Qv3VLCnjrPvMPuO31EO31GODxSHB4rjkXIP
+        kfoFUEsBAh4DFAAAAAgAghz6WKqSt8dtAwAAeCgAAA0AGAAAAAAAAQAAAKSB
+        AAAAAGluZGV4LXYxLnlhbWxVVAUAA6QZo2Z1eAsAAQTpAwAABH8AAABQSwUG
+        AAAAAAEAAQBTAAAAtAMAAAAA
+  recorded_at: Fri, 26 Jul 2024 03:38:49 GMT
 - request:
     method: get
     uri: https://raw.githubusercontent.com/relaton/relaton-data-plateau/main/data/plateau_handbook_00_10.yaml
@@ -135,21 +135,21 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 9D5E:8C3E3:118DFE:140D96:66A08004
+      - DCB5:2DEAE1:397DA:41075:66A31A47
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 24 Jul 2024 04:16:05 GMT
+      - Fri, 26 Jul 2024 03:38:50 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-iad-kjyo7100104-IAD
+      - cache-iad-kjyo7100103-IAD
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1721794565.072844,VS0,VE68
+      - S1721965130.277818,VS0,VE105
       Vary:
       - Authorization,Accept-Encoding,Origin
       Access-Control-Allow-Origin:
@@ -157,9 +157,9 @@ http_interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       X-Fastly-Request-Id:
-      - 86c54aeb5c85d225854797672b3d8d71175f5f32
+      - 86a97a1a0c8b14d49856b6f0cb885faf1d23f2e5
       Expires:
-      - Wed, 24 Jul 2024 04:21:05 GMT
+      - Fri, 26 Jul 2024 03:43:50 GMT
       Source-Age:
       - '0'
     body:
@@ -190,5 +190,5 @@ http_interactions:
         Oi8vd3d3Lm1saXQuZ28uanAvL3BsYXRlYXUvdXBsb2Fkcy8yMDIyLzA2LzFA
         MnguanBnCiAgICAgIG1pbWV0eXBlOiBpbWFnZS9qcGVnCiAgZmlsZXNpemU6
         IDE4MzgxODgwCg==
-  recorded_at: Wed, 24 Jul 2024 04:16:05 GMT
+  recorded_at: Fri, 26 Jul 2024 03:38:50 GMT
 recorded_with: VCR 6.2.0
