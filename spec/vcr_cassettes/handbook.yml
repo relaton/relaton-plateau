@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - application/zip
       Etag:
-      - W/"9e7f0bd0e9e371565fd27d331ccb31b1a46ada14c11cccdea0608ae3b7cc3f2d"
+      - W/"9385ecd77a00cc44dc23d4c50074280af7af58a280db1488d7e3f36a7cacf23b"
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -39,21 +39,21 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 33F2:1C5449:3C241:43ADD:66A31A4A
+      - E507:16F0:8CC5D1:9C8312:66A32234
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 26 Jul 2024 03:38:50 GMT
+      - Fri, 26 Jul 2024 04:12:39 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-iad-kjyo7100155-IAD
+      - cache-iad-kjyo7100025-IAD
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1721965130.107341,VS0,VE87
+      - S1721967160.678392,VS0,VE61
       Vary:
       - Authorization,Accept-Encoding,Origin
       Access-Control-Allow-Origin:
@@ -61,16 +61,16 @@ http_interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       X-Fastly-Request-Id:
-      - a426b3a11172135e111ca1b8a9e6c557f0f0e70c
+      - 50dde004c86ee3e6026652d0bd1d544e678a20d3
       Expires:
-      - Fri, 26 Jul 2024 03:43:50 GMT
+      - Fri, 26 Jul 2024 04:17:39 GMT
       Source-Age:
       - '0'
     body:
       encoding: ASCII-8BIT
       base64_string: |
-        UEsDBBQAAAAIAIIc+liqkrfHbQMAAHgoAAANABwAaW5kZXgtdjEueWFtbFVU
-        CQADpBmjZqQZo2Z1eAsAAQTpAwAABH8AAAClmb9OFFEUxnueYhIKqsV7zrn/
+        UEsDBBQAAAAIALsg+liqkrfHbQMAAHgoAAANABwAaW5kZXgtdjEueWFtbFVU
+        CQADoSCjZqEgo2Z1eAsAAQTpAwAABH8AAAClmb9OFFEUxnueYhIKqsV7zrn/
         ZjsKEwsLY7CeDLCGjSsQspj4ACRQGo3PQEGhiYmFvA5srHgFwcVYODf8rlsz
         +eac736/c88yo9FobdSMp3vjZuPF863tp1uvmmf9wd7O4eGbZt25ZnF56Tfd
         4vxsY61pxq+ns8m42evn/ZOjWT+f9Cfd/sPTnXOdd5vv+7ezRxUNKxpUVKyo
@@ -90,10 +90,10 @@ http_interactions:
         X4DCIyU4UsLbF9x+4AcVOKZ8+ns8/T1ffzxef4wPasOD2jimhjE1nlPDOTXu
         qXFP+UAxPFCMh9/45Od3f+kj2cCU4pFSHCnlRCkmSnmkFEdK+ehTPPqU51Rx
         TpWffumD5sCQ5uwL/+nDT1/w6Qv3VLCnjrPvMPuO31EO31GODxSHB4rjkXIP
-        kfoFUEsBAh4DFAAAAAgAghz6WKqSt8dtAwAAeCgAAA0AGAAAAAAAAQAAAKSB
-        AAAAAGluZGV4LXYxLnlhbWxVVAUAA6QZo2Z1eAsAAQTpAwAABH8AAABQSwUG
+        kfoFUEsBAh4DFAAAAAgAuyD6WKqSt8dtAwAAeCgAAA0AGAAAAAAAAQAAAKSB
+        AAAAAGluZGV4LXYxLnlhbWxVVAUAA6Ego2Z1eAsAAQTpAwAABH8AAABQSwUG
         AAAAAAEAAQBTAAAAtAMAAAAA
-  recorded_at: Fri, 26 Jul 2024 03:38:49 GMT
+  recorded_at: Fri, 26 Jul 2024 04:12:39 GMT
 - request:
     method: get
     uri: https://raw.githubusercontent.com/relaton/relaton-data-plateau/main/data/plateau_handbook_00_10.yaml
@@ -139,17 +139,17 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 26 Jul 2024 03:38:50 GMT
+      - Fri, 26 Jul 2024 04:12:39 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-iad-kjyo7100103-IAD
+      - cache-iad-kjyo7100167-IAD
       X-Cache:
-      - MISS
+      - HIT
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1721965130.277818,VS0,VE105
+      - S1721967160.826927,VS0,VE59
       Vary:
       - Authorization,Accept-Encoding,Origin
       Access-Control-Allow-Origin:
@@ -157,9 +157,9 @@ http_interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       X-Fastly-Request-Id:
-      - 86a97a1a0c8b14d49856b6f0cb885faf1d23f2e5
+      - 1055e8fc69ef96d9014dc5423b8426045988973f
       Expires:
-      - Fri, 26 Jul 2024 03:43:50 GMT
+      - Fri, 26 Jul 2024 04:17:39 GMT
       Source-Age:
       - '0'
     body:
@@ -190,5 +190,5 @@ http_interactions:
         Oi8vd3d3Lm1saXQuZ28uanAvL3BsYXRlYXUvdXBsb2Fkcy8yMDIyLzA2LzFA
         MnguanBnCiAgICAgIG1pbWV0eXBlOiBpbWFnZS9qcGVnCiAgZmlsZXNpemU6
         IDE4MzgxODgwCg==
-  recorded_at: Fri, 26 Jul 2024 03:38:50 GMT
+  recorded_at: Fri, 26 Jul 2024 04:12:39 GMT
 recorded_with: VCR 6.2.0
