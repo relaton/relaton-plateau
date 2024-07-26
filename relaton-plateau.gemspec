@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = Gem::Requirement.new(">= 3.0.0")
 
   # spec.add_dependency "pubid", "~> 0.1.1"
+  spec.add_dependency "base64"
   spec.add_dependency "relaton-index", "~> 0.2.12"
   spec.add_dependency "relaton-logger", "~> 0.2.0"
   spec.add_dependency "relaton-bib", "~> 1.19.3"
