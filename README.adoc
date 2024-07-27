@@ -6,11 +6,11 @@ image:https://github.com/relaton/relaton-plateau/workflows/windows/badge.svg["Bu
 image:https://github.com/relaton/relaton-plateau/workflows/ubuntu/badge.svg["Build Status (Ubuntu)", link="https://github.com/relaton/relaton-plateau/actions?workflow=ubuntu"]
 image:https://codeclimate.com/github/relaton/relaton-plateau/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/metanorma/relaton-plateau"]
 image:https://img.shields.io/github/issues-pr-raw/relaton/relaton-plateau.svg["Pull Requests", link="https://github.com/relaton/relaton-plateau/pulls"]
-image:https://img.shields.io/github/commits-since/relaton/relaton/latest.svg["Commits since latest",link="https://github.com/relaton/relaton/releases"]
+image:https://img.shields.io/github/commits-since/relaton/relaton/latest.svg["Commits since latest",link="https://github.com/relaton/relaton-plateau/releases"]
 
-RelatonPlateau is a Ruby gem that implements the https://github.com/metanorma/metanorma-model-plateau#iso-bibliographic-item[IsoBibliographicItem model].
+RelatonPlateau is a Ruby gem that implements the https://github.com/metanorma/metanorma-model-plateau#iso-bibliographic-item[BibliographicItem model].
 
-You can use it to retrieve metadata of ISO Standards from https://www.iso.org, and access such metadata through the `IsoBibliographicItem` object.
+You can use it to retrieve metadata of Plateau Standards from GitHub repositori, and access such metadata through the `BibliographicItem` object.
 
 == Installation
 
