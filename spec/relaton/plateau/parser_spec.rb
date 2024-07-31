@@ -23,13 +23,14 @@ RSpec.describe Relaton::Plateau::Parser do
     expect(subject).to receive(:parse_subdoctype).and_call_original
     expect(subject).to receive(:parse_date).and_call_original
     expect(subject).to receive(:parse_link).and_call_original
+    expect(subject).to receive(:parse_contributor).and_return :contributor
     expect(subject).to receive(:parse_filesize).and_return 123
     expect(subject).to receive(:parse_keyword).and_call_original
     expect(subject).to receive(:parse_structuredidentifier).and_return :stridcol
     expect(Relaton::Plateau::BibItem).to receive(:new).with(
       docid: [], title: :title, abstract: [], cover: :cover, edition: :edition,
       type: "standard", doctype: nil, subdoctype: nil, date: [], link: [],
-      filesize: 123, keyword: [], structuredidentifier: :stridcol
+      contributor: :contributor, filesize: 123, keyword: [], structuredidentifier: :stridcol
     ).and_return :bibitem
     expect(subject.parse).to be :bibitem
   end
@@ -113,6 +114,23 @@ RSpec.describe Relaton::Plateau::Parser do
     expect(link).to be_instance_of RelatonBib::TypedUri
     expect(link.content.to_s).to eq "http://example.com"
     expect(link.type).to eq "pdf"
+  end
+
+  it "parse_contributor" do
+    contrib = subject.send(:parse_contributor)
+    expect(contrib).to be_instance_of Array
+    expect(contrib.size).to eq 1
+    expect(contrib.first).to be_instance_of RelatonBib::ContributionInfo
+    expect(contrib.first.entity).to be_instance_of RelatonBib::Organization
+    expect(contrib.first.entity.name.size).to eq 2
+    expect(contrib.first.entity.name.first.content).to eq "国土交通省都市局"
+    expect(contrib.first.entity.name.first.language).to eq ["ja"]
+    expect(contrib.first.entity.name.first.script).to eq ["Jpan"]
+    expect(contrib.first.entity.name.last.content).to eq(
+      "Japanese Ministry of Land, Infrastructure, Transport and Tourism"
+    )
+    expect(contrib.first.entity.name.last.language).to eq ["en"]
+    expect(contrib.first.entity.name.last.script).to eq ["Latn"]
   end
 
   it "parse_filesize" do

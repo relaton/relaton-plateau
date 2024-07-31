@@ -2,7 +2,7 @@ module Relaton
   module Plateau
     class Parser
       ATTRIS = %i[docid title abstract cover edition type doctype subdoctype
-                  date link filesize keyword structuredidentifier].freeze
+                  date link contributor filesize keyword structuredidentifier].freeze
 
       def initialize(item)
         @item = item
@@ -52,6 +52,19 @@ module Relaton
       def parse_subdoctype; nil end
       def parse_date; [] end
       def parse_link; [] end
+
+      def parse_contributor
+        name = [
+          { content: "国土交通省都市局", language: "ja", script: "Jpan" },
+          {
+            content: "Japanese Ministry of Land, Infrastructure, Transport and Tourism",
+            language: "en",
+            script: "Latn"
+          }
+        ]
+        org = RelatonBib::Organization.new(name: name, abbreviation: "MLIT")
+        [RelatonBib::ContributionInfo.new(entity: org, role: [type: "publisher"])]
+      end
 
       def create_date(date, type = "published")
         RelatonBib::BibliographicDate.new(type: type, on: date)
