@@ -6,6 +6,14 @@
   <date type="published">
     <on>2021-03-26</on>
   </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name language="ja" script="Jpan">国土交通省都市局</name>
+      <name language="en" script="Latn">Japanese Ministry of Land, Infrastructure, Transport and Tourism</name>
+      <abbreviation>MLIT</abbreviation>
+    </organization>
+  </contributor>
   <edition number="1.0">第1.0版</edition>
   <abstract format="text/plain" language="ja" script="Jpan">地方自治体担当者や民間事業者等に向けた 3D都市モデル導入のためのガイダンス</abstract>
   <ext>
