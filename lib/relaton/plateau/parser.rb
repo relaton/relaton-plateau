@@ -55,7 +55,7 @@ module Relaton
 
       def parse_contributor
         name = [
-          { content: "国土交通省都市局", language: "ja", script: "Jpan" },
+          { content: "国土交通省", language: "ja", script: "Jpan" },
           {
             content: "Japanese Ministry of Land, Infrastructure, Transport and Tourism",
             language: "en",

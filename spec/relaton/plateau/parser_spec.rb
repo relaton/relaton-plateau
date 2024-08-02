@@ -123,7 +123,7 @@ RSpec.describe Relaton::Plateau::Parser do
     expect(contrib.first).to be_instance_of RelatonBib::ContributionInfo
     expect(contrib.first.entity).to be_instance_of RelatonBib::Organization
     expect(contrib.first.entity.name.size).to eq 2
-    expect(contrib.first.entity.name.first.content).to eq "国土交通省都市局"
+    expect(contrib.first.entity.name.first.content).to eq "国土交通省"
     expect(contrib.first.entity.name.first.language).to eq ["ja"]
     expect(contrib.first.entity.name.first.script).to eq ["Jpan"]
     expect(contrib.first.entity.name.last.content).to eq(
