@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - application/zip
       Etag:
-      - W/"618bdad688781e994fe6786e131feb4a85f361de0f799667d69094e59daddb5e"
+      - W/"6a4e0162a601ce9bfe4a43905295dcbea88718833aabaeaf0cd8444d7cf2bb69"
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -39,21 +39,21 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 6EF7:BEEBA:20B8B6:2478DD:66A9A6E4
+      - 2F45:0931:14BE39:18EA05:66B37C89
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 31 Jul 2024 02:52:25 GMT
+      - Wed, 07 Aug 2024 13:54:18 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-iad-kjyo7100071-IAD
+      - cache-bkk2310029-BKK
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1722394345.028891,VS0,VE115
+      - S1723038859.575943,VS0,VE373
       Vary:
       - Authorization,Accept-Encoding,Origin
       Access-Control-Allow-Origin:
@@ -61,16 +61,16 @@ http_interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       X-Fastly-Request-Id:
-      - a5d1bb43a7ae8696a04c4dfb68f7529579bc9b63
+      - 4e6424913a2c1ad63d9717ee3d53dcbdcd0e111d
       Expires:
-      - Wed, 31 Jul 2024 02:57:25 GMT
+      - Wed, 07 Aug 2024 13:59:18 GMT
       Source-Age:
       - '0'
     body:
       encoding: ASCII-8BIT
       base64_string: |
-        UEsDBBQAAAAIAG4W/1iqkrfHbQMAAHgoAAANABwAaW5kZXgtdjEueWFtbFVU
-        CQADsKapZrCmqWZ1eAsAAQTpAwAABH8AAAClmb9OFFEUxnueYhIKqsV7zrn/
+        UEsDBBQAAAAIAHdxAlmqkrfHbQMAAHgoAAANABwAaW5kZXgtdjEueWFtbFVU
+        CQADIumsZiLprGZ1eAsAAQTpAwAABH8AAAClmb9OFFEUxnueYhIKqsV7zrn/
         ZjsKEwsLY7CeDLCGjSsQspj4ACRQGo3PQEGhiYmFvA5srHgFwcVYODf8rlsz
         +eac736/c88yo9FobdSMp3vjZuPF863tp1uvmmf9wd7O4eGbZt25ZnF56Tfd
         4vxsY61pxq+ns8m42evn/ZOjWT+f9Cfd/sPTnXOdd5vv+7ezRxUNKxpUVKyo
@@ -90,10 +90,10 @@ http_interactions:
         X4DCIyU4UsLbF9x+4AcVOKZ8+ns8/T1ffzxef4wPasOD2jimhjE1nlPDOTXu
         qXFP+UAxPFCMh9/45Od3f+kj2cCU4pFSHCnlRCkmSnmkFEdK+ehTPPqU51Rx
         TpWffumD5sCQ5uwL/+nDT1/w6Qv3VLCnjrPvMPuO31EO31GODxSHB4rjkXIP
-        kfoFUEsBAh4DFAAAAAgAbhb/WKqSt8dtAwAAeCgAAA0AGAAAAAAAAQAAAKSB
-        AAAAAGluZGV4LXYxLnlhbWxVVAUAA7CmqWZ1eAsAAQTpAwAABH8AAABQSwUG
+        kfoFUEsBAh4DFAAAAAgAd3ECWaqSt8dtAwAAeCgAAA0AGAAAAAAAAQAAAKSB
+        AAAAAGluZGV4LXYxLnlhbWxVVAUAAyLprGZ1eAsAAQTpAwAABH8AAABQSwUG
         AAAAAAEAAQBTAAAAtAMAAAAA
-  recorded_at: Wed, 31 Jul 2024 02:52:24 GMT
+  recorded_at: Wed, 07 Aug 2024 13:54:19 GMT
 - request:
     method: get
     uri: https://raw.githubusercontent.com/relaton/relaton-data-plateau/main/data/plateau_handbook_00_10.yaml
@@ -117,7 +117,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1423'
+      - '1414'
       Cache-Control:
       - max-age=300
       Content-Security-Policy:
@@ -125,7 +125,7 @@ http_interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Etag:
-      - W/"7d28e700e27eb2bb7380370439ddc53db811c601b82a3448a5a19a60908f0cdc"
+      - W/"372c81ba7c824fe7c724006d13025439b92f0854bb8720547ff9cab5db807ab6"
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -135,21 +135,21 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Github-Request-Id:
-      - 2A8D:37D832:20BF75:247FAF:66A9A6E7
+      - 70AC:08F6:13BDAB:17F18C:66B37C8A
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 31 Jul 2024 02:52:25 GMT
+      - Wed, 07 Aug 2024 13:54:20 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-iad-kjyo7100171-IAD
+      - cache-bkk2310029-BKK
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1722394345.224219,VS0,VE107
+      - S1723038859.141034,VS0,VE904
       Vary:
       - Authorization,Accept-Encoding,Origin
       Access-Control-Allow-Origin:
@@ -157,9 +157,9 @@ http_interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       X-Fastly-Request-Id:
-      - a888230beafc60153ef88cdad77c1bb36821cbf5
+      - e3d2c846cdb7073488e59fb8d58e6c90079a441a
       Expires:
-      - Wed, 31 Jul 2024 02:57:25 GMT
+      - Wed, 07 Aug 2024 13:59:20 GMT
       Source-Age:
       - '0'
     body:
@@ -179,23 +179,23 @@ http_interactions:
         IFBMQVRFQVUKICBwcmltYXJ5OiB0cnVlCmRhdGU6Ci0gdHlwZTogcHVibGlz
         aGVkCiAgdmFsdWU6ICcyMDIxLTAzLTI2Jwpjb250cmlidXRvcjoKLSBvcmdh
         bml6YXRpb246CiAgICBuYW1lOgogICAgLSBjb250ZW50OiDlm73lnJ/kuqTp
-        gJrnnIHpg73luILlsYAKICAgICAgbGFuZ3VhZ2U6CiAgICAgIC0gamEKICAg
-        ICAgc2NyaXB0OgogICAgICAtIEpwYW4KICAgIC0gY29udGVudDogSmFwYW5l
-        c2UgTWluaXN0cnkgb2YgTGFuZCwgSW5mcmFzdHJ1Y3R1cmUsIFRyYW5zcG9y
-        dCBhbmQgVG91cmlzbQogICAgICBsYW5ndWFnZToKICAgICAgLSBlbgogICAg
-        ICBzY3JpcHQ6CiAgICAgIC0gTGF0bgogICAgYWJicmV2aWF0aW9uOgogICAg
-        ICBjb250ZW50OiBNTElUCiAgcm9sZToKICAtIHR5cGU6IHB1Ymxpc2hlcgpl
-        ZGl0aW9uOgogIGNvbnRlbnQ6IOesrDEuMOeJiAogIG51bWJlcjogJzEuMCcK
-        cmV2ZGF0ZTogJzIwMjEtMDMtMjYnCmFic3RyYWN0OgotIGNvbnRlbnQ6IOWc
-        sOaWueiHquayu+S9k+aLheW9k+iAheOChOawkemWk+S6i+alreiAheetieOB
-        q+WQkeOBkeOBnyAzROmDveW4guODouODh+ODq+WwjuWFpeOBruOBn+OCgeOB
-        ruOCrOOCpOODgOODs+OCuQogIGxhbmd1YWdlOgogIC0gamEKICBzY3JpcHQ6
-        CiAgLSBKcGFuCiAgZm9ybWF0OiB0ZXh0L3BsYWluCmRvY3R5cGU6CiAgdHlw
-        ZTogaGFuZGJvb2sKc3RydWN0dXJlZGlkZW50aWZpZXI6Ci0gZG9jbnVtYmVy
-        OiAnMDAnCiAgdHlwZTogSGFuZGJvb2sKICBhZ2VuY3k6CiAgLSBQTEFURUFV
-        CiAgZWRpdGlvbjog56ysMS4w54mICmV4dDoKICBjb3ZlcjoKICAgIGltYWdl
-        OgogICAgICBzcmM6IGh0dHBzOi8vd3d3Lm1saXQuZ28uanAvL3BsYXRlYXUv
-        dXBsb2Fkcy8yMDIyLzA2LzFAMnguanBnCiAgICAgIG1pbWV0eXBlOiBpbWFn
-        ZS9qcGVnCiAgZmlsZXNpemU6IDE4MzgxODgwCg==
-  recorded_at: Wed, 31 Jul 2024 02:52:25 GMT
+        gJrnnIEKICAgICAgbGFuZ3VhZ2U6CiAgICAgIC0gamEKICAgICAgc2NyaXB0
+        OgogICAgICAtIEpwYW4KICAgIC0gY29udGVudDogSmFwYW5lc2UgTWluaXN0
+        cnkgb2YgTGFuZCwgSW5mcmFzdHJ1Y3R1cmUsIFRyYW5zcG9ydCBhbmQgVG91
+        cmlzbQogICAgICBsYW5ndWFnZToKICAgICAgLSBlbgogICAgICBzY3JpcHQ6
+        CiAgICAgIC0gTGF0bgogICAgYWJicmV2aWF0aW9uOgogICAgICBjb250ZW50
+        OiBNTElUCiAgcm9sZToKICAtIHR5cGU6IHB1Ymxpc2hlcgplZGl0aW9uOgog
+        IGNvbnRlbnQ6IOesrDEuMOeJiAogIG51bWJlcjogJzEuMCcKcmV2ZGF0ZTog
+        JzIwMjEtMDMtMjYnCmFic3RyYWN0OgotIGNvbnRlbnQ6IOWcsOaWueiHquay
+        u+S9k+aLheW9k+iAheOChOawkemWk+S6i+alreiAheetieOBq+WQkeOBkeOB
+        nyAzROmDveW4guODouODh+ODq+WwjuWFpeOBruOBn+OCgeOBruOCrOOCpOOD
+        gOODs+OCuQogIGxhbmd1YWdlOgogIC0gamEKICBzY3JpcHQ6CiAgLSBKcGFu
+        CiAgZm9ybWF0OiB0ZXh0L3BsYWluCmRvY3R5cGU6CiAgdHlwZTogaGFuZGJv
+        b2sKc3RydWN0dXJlZGlkZW50aWZpZXI6Ci0gZG9jbnVtYmVyOiAnMDAnCiAg
+        dHlwZTogSGFuZGJvb2sKICBhZ2VuY3k6CiAgLSBQTEFURUFVCiAgZWRpdGlv
+        bjog56ysMS4w54mICmV4dDoKICBjb3ZlcjoKICAgIGltYWdlOgogICAgICBz
+        cmM6IGh0dHBzOi8vd3d3Lm1saXQuZ28uanAvL3BsYXRlYXUvdXBsb2Fkcy8y
+        MDIyLzA2LzFAMnguanBnCiAgICAgIG1pbWV0eXBlOiBpbWFnZS9qcGVnCiAg
+        ZmlsZXNpemU6IDE4MzgxODgwCg==
+  recorded_at: Wed, 07 Aug 2024 13:54:20 GMT
 recorded_with: VCR 6.2.0
