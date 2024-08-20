@@ -4,13 +4,13 @@ require_relative "stagename"
 module Relaton
   module Plateau
     class BibItem < RelatonBib::BibliographicItem
-      # @return [Relaton::Plateau::Cover]
+      # @return [Relaton::Plateau::Cover, nil]
       attr_reader :cover
 
-      # @return [Relaton::Plateau::Stagename]
+      # @return [Relaton::Plateau::Stagename, nil]
       attr_reader :stagename
 
-      # @return [Integer]
+      # @return [Integer, nil]
       attr_reader :filesize
 
       def initialize(**args)
@@ -44,8 +44,8 @@ module Relaton
               ics.each { |i| b.ics i }
               structuredidentifier&.to_xml b
               stagename&.to_xml b
-              cover.to_xml b
-              b.filesize filesize
+              cover&.to_xml b
+              b.filesize filesize if filesize
             end
             ext["schema-version"] = ext_schema if !opts[:embedded] && respond_to?(:ext_schema) && ext_schema
           end

@@ -60,6 +60,21 @@ RSpec.describe Relaton::Plateau::BibItem do
         </bibdata>
       XML
     end
+
+    it "bibdata with nil values" do
+      subject = Relaton::Plateau::BibItem.new title: [title], docid: [docid], doctype: doctype
+      builder = Nokogiri::XML::Builder.new
+      subject.to_xml builder: builder, bibdata: true
+      expect(builder.doc.root.to_xml).to be_equivalent_to <<~XML
+        <bibdata schema-version="v1.2.9">
+          <title type="main" format="text/plain" language="en" script="Latn">Title</title>
+          <docidentifier type="PLATEAU">id</docidentifier>
+          <ext>
+            <doctype>Handbook</doctype>
+          </ext>
+        </bibdata>
+      XML
+    end
   end
 
   it "to_hash" do
