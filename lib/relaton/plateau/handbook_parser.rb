@@ -15,7 +15,7 @@ module Relaton
       private
 
       def edition
-        @edition ||= @version["title"].split.first
+        @edition ||= @version["title"].split.first.match(/[\d.]+/).to_s
       end
 
       def parse_docid

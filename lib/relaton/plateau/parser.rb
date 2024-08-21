@@ -1,5 +1,6 @@
 module Relaton
   module Plateau
+    # Base class for Plateau parsers
     class Parser
       ATTRIS = %i[docid title abstract cover edition type doctype subdoctype
                   date link contributor filesize keyword structuredidentifier].freeze

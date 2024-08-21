@@ -46,7 +46,7 @@ RSpec.describe Relaton::Plateau::HandbookParser do
     expect(docid).to be_instance_of Array
     expect(docid.size).to eq 1
     expect(docid[0]).to be_instance_of RelatonBib::DocumentIdentifier
-    expect(docid[0].id).to eq "PLATEAU Handbook #09 第3.0版"
+    expect(docid[0].id).to eq "PLATEAU Handbook #09 3.0"
     expect(docid[0].type).to eq "PLATEAU"
     expect(docid[0].primary).to be true
   end
@@ -78,7 +78,7 @@ RSpec.describe Relaton::Plateau::HandbookParser do
   it "parse_edition" do
     edition = subject.send :parse_edition
     expect(edition).to be_instance_of RelatonBib::Edition
-    expect(edition.content).to eq "第3.0版"
+    expect(edition.content).to eq "3.0"
     expect(edition.number).to eq "3.0"
   end
 
@@ -132,6 +132,6 @@ RSpec.describe Relaton::Plateau::HandbookParser do
     expect(strid[0].type).to eq "Handbook"
     expect(strid[0].agency).to eq ["PLATEAU"]
     expect(strid[0].docnumber).to eq "09"
-    expect(strid[0].edition).to eq "第3.0版"
+    expect(strid[0].edition).to eq "3.0"
   end
 end
