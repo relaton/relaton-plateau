@@ -8,7 +8,7 @@ RSpec.describe Relaton::Plateau::Bibliography do
   context "get" do
     it "handbook", vcr: "handbook" do
       file = "spec/fixtures/handbook.xml"
-      bib = described_class.get("PLATEAU Handbook #00 第1.0版")
+      bib = described_class.get("PLATEAU Handbook #00 1.0")
       expect(bib).to be_instance_of Relaton::Plateau::BibItem
       xml = bib.to_xml bibdata: true
       File.write file, xml, encoding: "UTF-8" unless File.exist? file
