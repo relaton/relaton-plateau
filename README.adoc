@@ -33,10 +33,33 @@ Or install it yourself as:
 
 === Fetching
 
+==== Fetching Technical Reports
+
 [source,ruby]
 ----
 require "relaton/plateau"
+Relaton::Plateau::Bibliography.get("PLATEAU Technical Report #00")
+[relaton-plateau] INFO: (PLATEAU Technical Report #00) Fetching ...
+[relaton-plateau] INFO: (PLATEAU Technical Report #00) Found `PLATEAU Technical Report #00`
+ => #<Relaton::Plateau::BibItem:0x00000001238cfc98
+...
+----
 
+==== Fetching Handbooks unversioned
+
+[source,ruby]
+----
+Relaton::Plateau::Bibliography.get("PLATEAU Handbook #00")
+[relaton-plateau] INFO: (PLATEAU Handbook #00) Fetching ...
+[relaton-plateau] INFO: (PLATEAU Handbook #00) Found `PLATEAU Handbook #00`
+ => #<Relaton::Plateau::BibItem:0x00000001238c7598
+...
+----
+
+==== Fetching Handbooks versioned
+
+[source,ruby]
+----
 bib = Relaton::Plateau::Bibliography.get("PLATEAU Handbook #00 1.0")
 [relaton-plateau] INFO: (PLATEAU Handbook #00 1.0) Fetching ...
 [relaton-plateau] INFO: (PLATEAU Handbook #00 1.0) Found `PLATEAU Handbook #00 1.0`

@@ -45,7 +45,7 @@ RSpec.describe Relaton::Plateau::HandbookParser do
     docid = subject.send :parse_docid
     expect(docid).to be_instance_of Array
     expect(docid.size).to eq 1
-    expect(docid[0]).to be_instance_of RelatonBib::DocumentIdentifier
+    expect(docid[0]).to be_instance_of Relaton::Plateau::Docidentifier
     expect(docid[0].id).to eq "PLATEAU Handbook #09 3.0"
     expect(docid[0].type).to eq "PLATEAU"
     expect(docid[0].primary).to be true

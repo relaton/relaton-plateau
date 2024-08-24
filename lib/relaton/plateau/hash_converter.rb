@@ -42,6 +42,10 @@ module Relaton
         BibItem.new(**item_hash)
       end
 
+      def create_docid(**args)
+        Docidentifier.new(**args)
+      end
+
       def create_doctype(**args)
         DocumentType.new(**args)
       end

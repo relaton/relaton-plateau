@@ -25,9 +25,17 @@ RSpec.describe Relaton::Plateau::Bibliography do
     end
 
     it "not found", vcr: "not_found" do
-      expect { described_class.get("PLATEAU Handbook #03") }.to output(
-        including("[relaton-plateau] WARN: (PLATEAU Handbook #03) Not found.")
+      expect { described_class.get("PLATEAU Handbook #") }.to output(
+        including("[relaton-plateau] WARN: (PLATEAU Handbook #) Not found.")
       ).to_stderr_from_any_process
+    end
+
+    it "all editions", vcr: "all_editions" do
+      bib = described_class.get("PLATEAU Handbook #00")
+      expect(bib.docidentifier[0].id).to eq "PLATEAU Handbook #00"
+      expect(bib.relation.size).to eq 4
+      expect(bib.relation[0].type).to eq "hasEdition"
+      expect(bib.relation[0].bibitem.docidentifier[0].id).to eq "PLATEAU Handbook #00 4.0"
     end
 
     it "raise error" do

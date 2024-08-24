@@ -20,7 +20,7 @@ RSpec.describe Relaton::Plateau::XMLParser do
     item = Relaton::Plateau::XMLParser.from_xml xml
     expect(item).to be_instance_of Relaton::Plateau::BibItem
     expect(item.title.first).to be_instance_of RelatonBib::TypedTitleString
-    expect(item.docidentifier.first).to be_instance_of RelatonBib::DocumentIdentifier
+    expect(item.docidentifier.first).to be_instance_of Relaton::Plateau::Docidentifier
     expect(item.doctype).to be_instance_of Relaton::Plateau::DocumentType
     expect(item.doctype.type).to eq "article"
     expect(item.stagename).to be_instance_of Relaton::Plateau::Stagename

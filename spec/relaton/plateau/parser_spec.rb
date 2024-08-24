@@ -41,7 +41,7 @@ RSpec.describe Relaton::Plateau::Parser do
 
   it "create_docid" do
     docid = subject.send(:create_docid, "id")
-    expect(docid).to be_instance_of RelatonBib::DocumentIdentifier
+    expect(docid).to be_instance_of Relaton::Plateau::Docidentifier
     expect(docid.type).to eq "PLATEAU"
     expect(docid.id).to eq "id"
     expect(docid.primary).to be true

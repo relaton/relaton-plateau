@@ -21,7 +21,7 @@ module Relaton
       def parse_docid; [] end
 
       def create_docid(id)
-        RelatonBib::DocumentIdentifier.new(type: "PLATEAU", id: id, primary: true)
+        Docidentifier.new(type: "PLATEAU", id: id, primary: true)
       end
 
       def create_formatted_string(content, lang = "ja", script = "Jpan")
