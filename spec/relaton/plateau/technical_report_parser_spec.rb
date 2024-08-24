@@ -29,6 +29,26 @@ RSpec.describe Relaton::Plateau::TechnicalReportParser do
 
   subject { described_class.new entry }
 
+  context "parse" do
+    let(:bibitem) { subject.parse }
+    it { expect(bibitem).to be_instance_of Relaton::Plateau::BibItem }
+    it { expect(bibitem.docidentifier[0]).to be_instance_of Relaton::Plateau::Docidentifier }
+    it { expect(bibitem.docnumber).to eq "Technical Report #93" }
+    it { expect(bibitem.title).to be_instance_of RelatonBib::TypedTitleStringCollection }
+    it { expect(bibitem.abstract[0]).to be_instance_of RelatonBib::FormattedString }
+    it { expect(bibitem.cover).to be_instance_of Relaton::Plateau::Cover }
+    it { expect(bibitem.edition).to be_instance_of RelatonBib::Edition }
+    it { expect(bibitem.type).to eq "standard" }
+    it { expect(bibitem.doctype).to be_instance_of Relaton::Plateau::DocumentType }
+    it { expect(bibitem.subdoctype).to eq "Use Case" }
+    it { expect(bibitem.date[0]).to be_instance_of RelatonBib::BibliographicDate }
+    it { expect(bibitem.link[0]).to be_instance_of RelatonBib::TypedUri }
+    it { expect(bibitem.contributor[0]).to be_instance_of RelatonBib::ContributionInfo }
+    it { expect(bibitem.filesize).to eq 22005029 }
+    it { expect(bibitem.keyword[0]).to be_instance_of RelatonBib::LocalizedString }
+    it { expect(bibitem.structuredidentifier[0]).to be_instance_of RelatonBib::StructuredIdentifier }
+  end
+
   it "creates technical report" do
     expect(subject.instance_variable_get(:@entry)).to be entry
     expect(subject.instance_variable_get(:@item)).to be entry["technicalReport"]
@@ -38,7 +58,7 @@ RSpec.describe Relaton::Plateau::TechnicalReportParser do
     docid = subject.send :parse_docid
     expect(docid).to be_instance_of Array
     expect(docid.size).to eq 1
-    expect(docid[0]).to be_instance_of RelatonBib::DocumentIdentifier
+    expect(docid[0]).to be_instance_of Relaton::Plateau::Docidentifier
     expect(docid[0].id).to eq "PLATEAU Technical Report #93"
     expect(docid[0].type).to eq "PLATEAU"
     expect(docid[0].primary).to be true

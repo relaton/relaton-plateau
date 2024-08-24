@@ -14,7 +14,7 @@ RSpec.describe Relaton::Plateau::HashConverter do
   it "converts hash to bib" do
     bib = described_class.hash_to_bib hash
     expect(bib[:title].first).to be_instance_of RelatonBib::TypedTitleString
-    expect(bib[:docid].first).to be_instance_of RelatonBib::DocumentIdentifier
+    expect(bib[:docid].first).to be_instance_of Relaton::Plateau::Docidentifier
     expect(bib[:stagename]).to be_instance_of Relaton::Plateau::Stagename
     expect(bib[:stagename].content).to eq "Stage Name"
     expect(bib[:stagename].abbreviation).to eq "SN"

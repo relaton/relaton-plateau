@@ -54,6 +54,10 @@ module Relaton
           BibItem.new(**item_hash)
         end
 
+        def create_docid(**args)
+          Docidentifier.new(**args)
+        end
+
         def create_doctype(type)
           DocumentType.new type: type.text, abbreviation: type[:abbreviation]
         end

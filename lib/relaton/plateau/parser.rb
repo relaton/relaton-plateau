@@ -2,7 +2,7 @@ module Relaton
   module Plateau
     # Base class for Plateau parsers
     class Parser
-      ATTRIS = %i[docid title abstract cover edition type doctype subdoctype
+      ATTRIS = %i[docid docnumber title abstract cover edition type doctype subdoctype
                   date link contributor filesize keyword structuredidentifier].freeze
 
       def initialize(item)
@@ -18,10 +18,14 @@ module Relaton
 
       private
 
-      def parse_docid; [] end
+      def parse_docid
+        [create_docid("PLATEAU #{parse_docnumber}")]
+      end
+
+      def parse_docnumber; end
 
       def create_docid(id)
-        RelatonBib::DocumentIdentifier.new(type: "PLATEAU", id: id, primary: true)
+        Docidentifier.new(type: "PLATEAU", id: id, primary: true)
       end
 
       def create_formatted_string(content, lang = "ja", script = "Jpan")

@@ -13,6 +13,7 @@ RSpec.describe Relaton::Plateau::Bibliography do
       xml = bib.to_xml bibdata: true
       File.write file, xml, encoding: "UTF-8" unless File.exist? file
       expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8")
+        .gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
     end
 
     it "technical-report", vcr: "technical_report" do
@@ -22,12 +23,21 @@ RSpec.describe Relaton::Plateau::Bibliography do
       xml = bib.to_xml bibdata: true
       File.write file, xml, encoding: "UTF-8" unless File.exist? file
       expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8")
+        .gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
     end
 
     it "not found", vcr: "not_found" do
-      expect { described_class.get("PLATEAU Handbook #03") }.to output(
-        including("[relaton-plateau] WARN: (PLATEAU Handbook #03) Not found.")
+      expect { described_class.get("PLATEAU Handbook #") }.to output(
+        including("[relaton-plateau] WARN: (PLATEAU Handbook #) Not found.")
       ).to_stderr_from_any_process
+    end
+
+    it "all editions", vcr: "all_editions" do
+      bib = described_class.get("PLATEAU Handbook #00")
+      expect(bib.docidentifier[0].id).to eq "PLATEAU Handbook #00"
+      expect(bib.relation.size).to eq 4
+      expect(bib.relation[0].type).to eq "hasEdition"
+      expect(bib.relation[0].bibitem.docidentifier[0].id).to eq "PLATEAU Handbook #00 4.0"
     end
 
     it "raise error" do

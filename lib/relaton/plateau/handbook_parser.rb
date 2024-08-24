@@ -18,8 +18,8 @@ module Relaton
         @edition ||= @version["title"].split.first.match(/[\d.]+/).to_s
       end
 
-      def parse_docid
-        super << create_docid("PLATEAU Handbook ##{@entry["slug"]} #{edition}")
+      def parse_docnumber
+        "Handbook ##{@entry["slug"]} #{edition}"
       end
 
       def parse_title

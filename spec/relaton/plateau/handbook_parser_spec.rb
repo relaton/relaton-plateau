@@ -41,11 +41,29 @@ RSpec.describe Relaton::Plateau::HandbookParser do
     expect(subject.instance_variable_get(:@doctype)).to eq doctype
   end
 
+  context "parse" do
+    let(:bibitem) { subject.parse }
+    it { expect(bibitem).to be_instance_of Relaton::Plateau::BibItem }
+    it { expect(bibitem.docidentifier[0]).to be_instance_of Relaton::Plateau::Docidentifier }
+    it { expect(bibitem.docnumber).to eq "Handbook #09 3.0" }
+    it { expect(bibitem.title[0]).to be_instance_of RelatonBib::TypedTitleString }
+    it { expect(bibitem.abstract[0]).to be_instance_of RelatonBib::FormattedString }
+    it { expect(bibitem.edition).to be_instance_of RelatonBib::Edition }
+    it { expect(bibitem.doctype).to be_instance_of Relaton::Plateau::DocumentType }
+    it { expect(bibitem.subdoctype).to be_nil }
+    it { expect(bibitem.date[0]).to be_instance_of RelatonBib::BibliographicDate }
+    it { expect(bibitem.link[0]).to be_instance_of RelatonBib::TypedUri }
+    it { expect(bibitem.contributor[0]).to be_instance_of RelatonBib::ContributionInfo }
+    it { expect(bibitem.filesize).to eq 16124297 }
+    it { expect(bibitem.keyword).to eq [] }
+    it { expect(bibitem.structuredidentifier[0]).to be_instance_of RelatonBib::StructuredIdentifier }
+  end
+
   it "parse_docid" do
     docid = subject.send :parse_docid
     expect(docid).to be_instance_of Array
     expect(docid.size).to eq 1
-    expect(docid[0]).to be_instance_of RelatonBib::DocumentIdentifier
+    expect(docid[0]).to be_instance_of Relaton::Plateau::Docidentifier
     expect(docid[0].id).to eq "PLATEAU Handbook #09 3.0"
     expect(docid[0].type).to eq "PLATEAU"
     expect(docid[0].primary).to be true

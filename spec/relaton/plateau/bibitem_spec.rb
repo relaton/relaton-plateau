@@ -1,6 +1,6 @@
 RSpec.describe Relaton::Plateau::BibItem do
   let(:title) { RelatonBib::TypedTitleString.new(type: "main", content: "Title", language: "en", script: "Latn") }
-  let(:docid) { RelatonBib::DocumentIdentifier.new(type: "PLATEAU", id: "id", parimary: true) }
+  let(:docid) { Relaton::Plateau::Docidentifier.new(type: "PLATEAU", id: "id", parimary: true) }
   let(:doctype) { Relaton::Plateau::DocumentType.new(type: "Handbook") }
   let(:strid) { RelatonBib::StructuredIdentifier.new(type: "Handbook", agency: ["PLATEAU"], docnumber: "docnumber") }
   let(:stidcol) { RelatonBib::StructuredIdentifierCollection.new [strid] }

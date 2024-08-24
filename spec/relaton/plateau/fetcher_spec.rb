@@ -5,7 +5,7 @@ RSpec.describe Relaton::Plateau::Fetcher do
   let(:uri) { URI "https://example.com" }
 
   let(:item) do
-    docid = RelatonBib::DocumentIdentifier.new id: "PLATEAU Handbook #01 第4.0版"
+    docid = Relaton::Plateau::Docidentifier.new id: "PLATEAU Handbook #01 第4.0版"
     Relaton::Plateau::BibItem.new docid: [docid]
   end
 

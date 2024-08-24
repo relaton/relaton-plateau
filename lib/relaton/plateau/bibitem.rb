@@ -11,7 +11,7 @@ module Relaton
       attr_reader :stagename
 
       # @return [Integer, nil]
-      attr_reader :filesize
+      attr_accessor :filesize
 
       def initialize(**args)
         @cover = args.delete(:cover)
@@ -70,6 +70,20 @@ module Relaton
         output += cover.to_asciibib prefix if cover
         output += "#{pref}filesize:: #{filesize}\n" if filesize
         output
+      end
+
+      def to_all_editions(hits)
+        me = deep_clone
+        me.docidentifier.each(&:remove_edition)
+        me.id.sub!(/#{Regexp.escape(me.edition.content)}$/, "")
+        me.instance_variable_set :@edition, nil
+        me.date = []
+        me.instance_variable_set :@link, []
+        me.filesize = nil
+        hits.each do |h|
+          me.relation << RelatonBib::DocumentRelation.new(type: "hasEdition", bibitem: h.bibitem)
+        end
+        me
       end
 
       private

@@ -24,20 +24,15 @@ module Relaton
       end
 
       def search(code)
-        rows = index.search { |r| r[:id] ==  code }
+        all_editions = code.match?(/Handbook #\d+$/)
+        rows = index.search do |r|
+          id = all_editions ? r[:id].sub(/ \d+\.\d+$/, "") : r[:id]
+          id ==  code
+        end
         return unless rows.any?
 
-        row = rows.sort_by { |r| r[:id] }.last
-        fetch_doc code, **row
-      end
-
-      def fetch_doc(code, id:, file:)
-        resp = Net::HTTP.get_response URI("#{GHURL}#{file}")
-        return unless resp.is_a? Net::HTTPSuccess
-
-        hash = YAML.load(resp.body)
-        args = HashConverter.hash_to_bib hash
-        BibItem.new(**args)
+        hits = rows.map { |r| Hit.new(**r) }
+        all_editions ? hits[0].bibitem.to_all_editions(hits) : hits[0].bibitem
       end
     end
   end
