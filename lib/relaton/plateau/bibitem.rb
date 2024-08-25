@@ -73,6 +73,8 @@ module Relaton
       end
 
       def to_all_editions(hits)
+        return self if hits.size < 2
+
         me = deep_clone
         me.docidentifier.each(&:remove_edition)
         me.id.sub!(/#{Regexp.escape(me.edition.content)}$/, "")

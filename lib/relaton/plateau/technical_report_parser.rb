@@ -9,7 +9,7 @@ module Relaton
       private
 
       def parse_docnumber
-        "Technical Report ##{@entry["slug"]}"
+        "Technical Report ##{@entry["slug"]} #{edition_number}"
       end
 
       def parse_abstract
@@ -17,7 +17,11 @@ module Relaton
       end
 
       def parse_edition
-        RelatonBib::Edition.new content: "1.0", number: "1.0"
+        RelatonBib::Edition.new content: edition_number, number: edition_number
+      end
+
+      def edition_number
+        "1.0"
       end
 
       def parse_doctype

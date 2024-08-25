@@ -32,12 +32,18 @@ RSpec.describe Relaton::Plateau::Bibliography do
       ).to_stderr_from_any_process
     end
 
-    it "all editions", vcr: "all_editions" do
+    it "Handbook all editions", vcr: "handbook_all_editions" do
       bib = described_class.get("PLATEAU Handbook #00")
       expect(bib.docidentifier[0].id).to eq "PLATEAU Handbook #00"
       expect(bib.relation.size).to eq 4
       expect(bib.relation[0].type).to eq "hasEdition"
       expect(bib.relation[0].bibitem.docidentifier[0].id).to eq "PLATEAU Handbook #00 4.0"
+    end
+
+    it "Technical Report all editions", vcr: "technical_report_all_editions" do
+      bib = described_class.get("PLATEAU Technical Report #00")
+      expect(bib.docidentifier[0].id).to eq "PLATEAU Technical Report #00"
+      expect(bib.relation.size).to eq 0
     end
 
     it "raise error" do
