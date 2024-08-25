@@ -42,7 +42,7 @@ RSpec.describe Relaton::Plateau::Bibliography do
 
     it "Technical Report all editions", vcr: "technical_report_all_editions" do
       bib = described_class.get("PLATEAU Technical Report #00")
-      expect(bib.docidentifier[0].id).to eq "PLATEAU Technical Report #00"
+      expect(bib.docidentifier[0].id).to eq "PLATEAU Technical Report #00 1.0"
       expect(bib.relation.size).to eq 0
     end
 

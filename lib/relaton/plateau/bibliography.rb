@@ -24,7 +24,7 @@ module Relaton
       end
 
       def search(code)
-        all_editions = code.match?(/Handbook #\d+$/)
+        all_editions = code.match?(/ #\d+$/)
         rows = index.search do |r|
           id = all_editions ? r[:id].sub(/ \d+\.\d+$/, "") : r[:id]
           id ==  code

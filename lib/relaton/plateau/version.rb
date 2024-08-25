@@ -2,6 +2,6 @@
 
 module Relaton
   module Plateau
-    VERSION = "1.19.4"
+    VERSION = "1.19.5"
   end
 end
