@@ -1,4 +1,6 @@
 require "json"
+require "relaton/core"
+require_relative "../plateau"
 require_relative "parser"
 require_relative "handbook_parser"
 require_relative "technical_report_parser"
@@ -6,37 +8,24 @@ require_relative "technical_report_parser"
 module Relaton
   module Plateau
     # Fetcher class to fetch data from the Plateau website
-    class Fetcher
+    class DataFetcher < Core::DataFetcher
       HANDBOOKS_URL = "https://www.mlit.go.jp/plateau/_next/data/1.3.0/libraries/handbooks.json".freeze
       TECHNICAL_REPORTS_URL = "https://www.mlit.go.jp/plateau/_next/data/1.3.0/libraries/technical-reports.json".freeze
 
-      def initialize(output, format)
-        @output = output
-        @format = format
-        @ext = format.sub(/^bib/, "")
-        @files = []
-      end
-
       def index
-        @index ||= Relaton::Index.find_or_create :plateau, file: "index-v1.yaml"
+        @index ||= Relaton::Index.find_or_create :plateau, file: "#{INDEXFILE}.yaml"
       end
 
-      def self.fetch(source, output: "data", format: "yaml")
-        t1 = Time.now
-        puts "Started at: #{t1}"
-        FileUtils.mkdir_p output
+      def log_error(msg)
+        Util.error msg
+      end
 
-        if source == "plateau-handbooks"
-          new(output, format).extract_handbooks_data
-        elsif source == "plateau-technical-reports"
-          new(output, format).extract_technical_reports_data
-        else
-          puts "Invalid source: #{source}"
+      def fetch(source)
+        case source
+        when "plateau-handbooks" then extract_handbooks_data
+        when "plateau-technical-reports" then extract_technical_reports_data
+        else puts "Invalid source: #{source}"
         end
-
-        t2 = Time.now
-        puts "Stopped at: #{t2}"
-        puts "Done in: #{(t2 - t1).round} sec."
       end
 
       # Create a GET request with custom headers to mimic a browser
@@ -102,22 +91,15 @@ module Relaton
         Util.info "Extracting handbooks data..."
         data["pageProps"]["handbooks"]["nodes"].each do |entry|
           handbook = entry["handbook"]
-          versions = handbook["versions"]
+          doctype = entry["slug"].match("-") ? "annex" : "handbook"
 
-          description_parts = handbook["description"]&.split("<br />") || ["", ""]
-          title_en = description_parts[0].strip if description_parts[0]
-          abstract = description_parts[1].strip if description_parts[1]
-
-          doctype = entry["slug"].match("-") ?  "annex" : "handbook"
-
-          versions.each do |version|
-            item = HandbookParser.new(
-              version: version, entry: entry, title_en: title_en, abstract: abstract, doctype: doctype
-            ).parse
+          handbook["versions"].each do |version|
+            item = HandbookParser.new(version: version, entry: entry, doctype: doctype, errors: @errors).parse
             save_document(item)
           end
         end
         index.save
+        report_errors
       end
 
       #
@@ -127,13 +109,14 @@ module Relaton
         data = fetch_json_data(TECHNICAL_REPORTS_URL)
         Util.info "Extracting technical reports data..."
         data["pageProps"]["nodes"].map do |entry|
-          save_document(TechnicalReportParser.new(entry).parse)
+          save_document(TechnicalReportParser.new(entry, @errors).parse)
         end
         index.save
+        report_errors
       end
 
       def save_document(item)
-        id = item.docidentifier.first.id
+        id = item.docidentifier.first.content
         file = file_name id
         if @files.include?(file)
           Util.warn "File #{file} already exists, skipping.", key: id
@@ -145,21 +128,25 @@ module Relaton
       end
 
       def file_name(id)
-        name = id.gsub(/\s+/, "_").gsub(/\W+/, "").downcase
+        name = id.gsub(/\s+/, "-").gsub(/[^\w-]+/, "").downcase
         if id.match?(/民間活用編/)
-          name += "_private"
+          name += "-private"
         elsif id.match?(/公共活用編/)
-          name += "_public"
+          name += "-public"
         end
         File.join(@output, "#{name}.#{@ext}")
       end
 
-      def serialize(item)
-        case @format
-        when "yaml" then item.to_hash.to_yaml
-        when "xml" then item.to_xml bibdata: true
-        else item.send("to_#{@format}")
-        end
+      def to_yaml(bib)
+        Item.to_yaml(bib)
+      end
+
+      def to_xml(bib)
+        Item.to_xml(bib, bibdata: true)
+      end
+
+      def to_bibxml(bib)
+        bib.to_rfcxml
       end
     end
   end

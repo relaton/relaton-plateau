@@ -1,7 +1,5 @@
-# frozen_string_literal: true
-
 module Relaton
   module Plateau
-    VERSION = "1.20.0"
+    VERSION = "2.1.1".freeze
   end
 end

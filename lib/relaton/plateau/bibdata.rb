@@ -1,8 +1,8 @@
 module Relaton
   module Plateau
-    class Bibitem < Item
+    class Bibdata < Item
       model ItemData
-      include Bib::BibitemShared
+      include Bib::BibdataShared
     end
   end
 end

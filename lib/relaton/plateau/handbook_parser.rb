@@ -3,12 +3,10 @@
 module Relaton
   module Plateau
     class HandbookParser < Parser
-      def initialize(version:, entry:, title_en:, abstract:, doctype:)
+      def initialize(version:, entry:, doctype:, errors: {})
         @version = version
         @entry = entry
-        super entry["handbook"]
-        @title_en = title_en
-        @abstract = abstract
+        super(entry["handbook"], errors)
         @doctype = doctype
       end
 
@@ -18,52 +16,79 @@ module Relaton
         @edition ||= @version["title"].split.first.match(/[\d.]+/).to_s
       end
 
-      def parse_docnumber
-        "Handbook ##{@entry["slug"]} #{edition}"
+      def slug_number
+        @slug_number ||= @entry["slug"]&.to_s&.split("_")&.first
       end
 
-      def parse_title
-        title = super
-        title << create_title(@title_en, "en", "Latn") if @title_en
-        title
+      def parse_docnumber
+        @errors[:hb_docnumber] &&= @entry["slug"].nil? || @entry["slug"].to_s.empty?
+        ["Handbook ##{slug_number}", edition].compact.join(" ")
       end
 
       def parse_abstract
-        abstr = super
-        abstr << create_formatted_string(@abstract) if @abstract
-        abstr
+        unless @item["description"]
+          @errors[:hb_abstract] &&= true
+          return []
+        end
+
+        result = @item["description"].split("<br />").filter_map do |part|
+          text = part.strip
+          next if text.empty?
+
+          lang, script = detect_lang(text)
+          create_abstract(text, lang, script)
+        end
+        @errors[:hb_abstract] &&= result.empty?
+        result
       end
 
       def parse_edition
-        number = edition.match(/\d\.\d/)[0]
-        RelatonBib::Edition.new(content: edition, number: number)
-      end
+        if edition.nil? || edition.empty?
+          @errors[:hb_edition] &&= true
+          return
+        end
 
-      def parse_doctype
-        DocumentType.new type: @doctype
+        number = edition.match(/\d\.\d/)[0]
+        result = Bib::Edition.new(content: edition, number: number)
+        @errors[:hb_edition] &&= result.nil?
+        result
       end
 
       def parse_date
-        super << create_date(@version["date"].gsub(".", "-"))
+        if @version["date"].nil? || @version["date"].empty?
+          @errors[:hb_date] &&= true
+          return super
+        end
+
+        result = super << create_date(@version["date"].gsub(".", "-"))
+        @errors[:hb_date] &&= result.empty?
+        result
       end
 
-      def parse_link
-        %w[pdf html].map do |type|
+      def parse_source
+        result = %w[pdf html].map do |type|
           next unless @version[type]
 
           create_link(@version[type], type)
         end.compact
+        @errors[:hb_source] &&= result.empty?
+        result
       end
 
-      def parse_filesize
-        @version["filesize"].to_i
-      end
-
-      def parse_structuredidentifier
-        strid = RelatonBib::StructuredIdentifier.new(
-          type: "Handbook", agency: ["PLATEAU"], docnumber: @entry["slug"], edition: edition
+      def parse_ext
+        strid = Bib::StructuredIdentifier.new(
+          type: "Handbook", agency: ["PLATEAU"], docnumber: slug_number, edition: edition
         )
-        RelatonBib::StructuredIdentifierCollection.new [strid]
+        Ext.new(
+          doctype: Doctype.new(content: @doctype),
+          flavor: "plateau",
+          structuredidentifier: [strid],
+          filesize: filesize
+        )
+      end
+      def filesize
+        @errors[:hb_filesize] &&= @version["filesize"].nil?
+        @version["filesize"].to_i
       end
     end
   end

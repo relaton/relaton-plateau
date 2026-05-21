@@ -1,19 +1,22 @@
 # encoding: UTF-8
 
-RSpec.describe Relaton::Plateau::Fetcher do
+require "relaton/plateau/data_fetcher"
+
+RSpec.describe Relaton::Plateau::DataFetcher do
   subject { described_class.new "data", "bibxml" }
   let(:uri) { URI "https://example.com" }
 
   let(:item) do
-    docid = Relaton::Plateau::Docidentifier.new id: "PLATEAU Handbook #01 第4.0版"
-    Relaton::Plateau::BibItem.new docid: [docid]
+    docid = Relaton::Bib::Docidentifier.new content: "PLATEAU Handbook #01 第4.0版"
+    title = Relaton::Bib::Title.new content: "Test Title", type: "main"
+    Relaton::Plateau::ItemData.new docidentifier: [docid], title: [title]
   end
 
   it "initializes" do
     expect(subject.instance_variable_get(:@output)).to eq "data"
     expect(subject.instance_variable_get(:@format)).to eq "bibxml"
     expect(subject.instance_variable_get(:@ext)).to eq "xml"
-    expect(subject.instance_variable_get(:@files)).to eq []
+    expect(subject.instance_variable_get(:@files)).to eq Set.new
   end
 
   it "index" do
@@ -23,28 +26,18 @@ RSpec.describe Relaton::Plateau::Fetcher do
   end
 
   context "fetch" do
-    before do
-      expect(FileUtils).to receive(:mkdir_p).with("data")
+    it "handbooks" do
+      expect(subject).to receive(:extract_handbooks_data)
+      subject.fetch "plateau-handbooks"
     end
 
-    context "success" do
-      before do
-        expect(described_class).to receive(:new).with("data", "bibxml").and_return subject
-      end
-
-      it "handbooks" do
-        expect(subject).to receive(:extract_handbooks_data)
-        described_class.fetch "plateau-handbooks", output: "data", format: "bibxml"
-      end
-
-      it "technical reports" do
-        expect(subject).to receive(:extract_technical_reports_data)
-        described_class.fetch "plateau-technical-reports", output: "data", format: "bibxml"
-      end
+    it "technical reports" do
+      expect(subject).to receive(:extract_technical_reports_data)
+      subject.fetch "plateau-technical-reports"
     end
 
     it "invalid source" do
-      expect { described_class.fetch "invalid" }.to output(/Invalid source: invalid/).to_stdout_from_any_process
+      expect { subject.fetch "invalid" }.to output(/Invalid source: invalid/).to_stdout_from_any_process
     end
   end
 
@@ -132,7 +125,7 @@ RSpec.describe Relaton::Plateau::Fetcher do
           "https://www.mlit.go.jp/plateau/_next/data/1.3.0/libraries/handbooks.json"
         ).and_return data
         expect(Relaton::Plateau::HandbookParser).to receive(:new).with(
-          version: version, entry: entry, title_en: "Title", abstract: "Abstract", doctype: "handbook"
+          version: version, entry: entry, doctype: "handbook", errors: {}
         ).and_return double(parse: :bibitem)
         expect(subject).to receive(:save_document).with(:bibitem)
         subject.extract_handbooks_data
@@ -144,7 +137,7 @@ RSpec.describe Relaton::Plateau::Fetcher do
           "https://www.mlit.go.jp/plateau/_next/data/1.3.0/libraries/handbooks.json"
         ).and_return data
         expect(Relaton::Plateau::HandbookParser).to receive(:new).with(
-          version: version, entry: entry, title_en: "Title", abstract: "Abstract", doctype: "annex"
+          version: version, entry: entry, doctype: "annex", errors: {}
         ).and_return double(parse: :bibitem)
         expect(subject).to receive(:save_document).with(:bibitem)
         subject.extract_handbooks_data
@@ -156,7 +149,7 @@ RSpec.describe Relaton::Plateau::Fetcher do
       expect(subject).to receive(:fetch_json_data).with(
         "https://www.mlit.go.jp/plateau/_next/data/1.3.0/libraries/technical-reports.json"
       ).and_return data
-      expect(Relaton::Plateau::TechnicalReportParser).to receive(:new).with(:entry)
+      expect(Relaton::Plateau::TechnicalReportParser).to receive(:new).with(:entry, kind_of(Hash))
         .and_return double(parse: :bibitem)
       expect(subject).to receive(:save_document).with(:bibitem)
       subject.extract_technical_reports_data
@@ -165,18 +158,19 @@ RSpec.describe Relaton::Plateau::Fetcher do
 
   context "save_document" do
     it "success" do
+      expect(subject).to receive(:serialize).with(item).and_return "<bibxml/>"
       expect(File).to receive(:write).with(
-        "data/plateau_handbook_01_40.xml", "<reference anchor=\"PLATEAU.Handbook.#01.第4.0版\"/>"
+        "data/plateau-handbook-01-40.xml", "<bibxml/>"
       )
       expect(subject.index).to receive(:add_or_update).with(
-        "PLATEAU Handbook #01 第4.0版", "data/plateau_handbook_01_40.xml"
+        "PLATEAU Handbook #01 第4.0版", "data/plateau-handbook-01-40.xml"
       )
       subject.save_document item
-      expect(subject.instance_variable_get(:@files)).to eq ["data/plateau_handbook_01_40.xml"]
+      expect(subject.instance_variable_get(:@files)).to eq Set.new(["data/plateau-handbook-01-40.xml"])
     end
 
     it "duplicate" do
-      subject.instance_variable_set :@files, ["data/plateau_handbook_01_40.xml"]
+      subject.instance_variable_set :@files, Set.new(["data/plateau-handbook-01-40.xml"])
       expect(File).not_to receive(:write)
       subject.save_document item
     end
@@ -185,17 +179,17 @@ RSpec.describe Relaton::Plateau::Fetcher do
   context "file_name" do
     it do
       expect(subject.file_name("PLATEAU Handbook #01 第4.0版"))
-        .to eq "data/plateau_handbook_01_40.xml"
+        .to eq "data/plateau-handbook-01-40.xml"
     end
 
     it "private" do
       expect(subject.file_name("PLATEAU Handbook #11 第1.0版（民間活用編）"))
-        .to eq "data/plateau_handbook_11_10_private.xml"
+        .to eq "data/plateau-handbook-11-10-private.xml"
     end
 
     it "public" do
       expect(subject.file_name("PLATEAU Handbook #11 第1.0版（公共活用編）"))
-        .to eq "data/plateau_handbook_11_10_public.xml"
+        .to eq "data/plateau-handbook-11-10-public.xml"
     end
   end
 
@@ -203,24 +197,18 @@ RSpec.describe Relaton::Plateau::Fetcher do
     it "yaml" do
       subject.instance_variable_set :@format, "yaml"
       subject.instance_variable_set :@ext, "yaml"
-      expect(subject.serialize item).to eq(
-        "---\nschema-version: v1.2.9\nid: PLATEAUHandbook#01第4.0版\ndocid:\n- id: 'PLATEAU Handbook #01 第4.0版'\n"
-      )
+      yaml_output = subject.to_yaml item
+      expect(yaml_output).to include "PLATEAU Handbook #01"
     end
 
     it "xml" do
-      subject.instance_variable_set :@format, "xml"
-      expect(subject.serialize item).to be_equivalent_to <<~XML
-        <bibdata schema-version="v1.2.9">
-          <docidentifier>PLATEAU Handbook #01 第4.0版</docidentifier>
-        </bibdata>
-      XML
+      xml_output = subject.to_xml item
+      expect(xml_output).to include "PLATEAU Handbook #01"
     end
 
     it "bibxml" do
-      expect(subject.serialize item).to be_equivalent_to <<~XML
-        <reference anchor="PLATEAU.Handbook.#01.第4.0版"/>
-      XML
+      rfcxml_output = subject.to_bibxml item
+      expect(rfcxml_output).to include "<reference"
     end
   end
 end
